@@ -200,8 +200,8 @@ export function ConversionLandingPage() {
               <motion.article
                 key={card.title}
                 initial={productCardInitialStates[idx]}
-                viewport={{ once: true, margin: "-50px" }} whileInView={{ opacity: 1, x: 0, y: 0, rotateX: 0, rotateZ: 0, scale: 1 }}
-                viewport={{ once: true, amount: 0.32 }}
+                whileInView={{ opacity: 1, x: 0, y: 0, rotateX: 0, rotateZ: 0, scale: 1 }}
+                viewport={{ once: true, margin: "-50px", amount: 0.32 }}
                 transition={{ duration: 0.6, ease: "easeOut", delay: idx * 0.15 }}
                 style={{ transformStyle: "preserve-3d" }}
                 className="group relative min-h-[300px] overflow-hidden rounded-2xl border border-[#0A1128]/20 bg-[#FAF6EE] p-5 backdrop-blur-lg transition-all duration-300 hover:border-[#D4AF37]/45 hover:shadow-[0_0_40px_rgba(212,175,55,0.24)]"

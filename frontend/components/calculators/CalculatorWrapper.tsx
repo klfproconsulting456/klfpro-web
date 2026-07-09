@@ -1,8 +1,19 @@
 "use client";
 
 import Script from "next/script";
+import { usePathname, useSelectedLayoutSegments } from "next/navigation";
 
 export function CalculatorWrapper() {
+  const pathname = usePathname();
+  const segments = useSelectedLayoutSegments();
+  
+  const isAppRoute = pathname?.startsWith("/admin") || pathname?.startsWith("/portal") || pathname?.startsWith("/login");
+  const isHealthcareRoute = segments?.includes("klfpro-healthcare") || pathname?.startsWith("/klfpro-healthcare");
+
+  if (isAppRoute || isHealthcareRoute) {
+    return null;
+  }
+
   return (
     <>
       <link rel="stylesheet" href="/css/calculators.css" />

@@ -252,8 +252,8 @@ export function ConversionLandingPage() {
       <motion.section
         id="how"
         initial={{ opacity: 0 }}
-        viewport={{ once: true, margin: "-50px" }} whileInView={{ opacity: 1 }}
-        viewport={{ once: true, amount: 0.16 }}
+        whileInView={{ opacity: 1 }}
+        viewport={{ once: true, margin: "-50px", amount: 0.16 }}
         className={sectionClass + " relative overflow-hidden bg-transparent"}
       >
         <motion.div
@@ -357,7 +357,7 @@ export function ConversionLandingPage() {
                 <motion.div
                   key={step}
                   initial={{ opacity: 0, y: 32, scale: 0.95, rotateX: 8 }}
-                  viewport={{ once: true, margin: "-50px" }} whileInView={{ opacity: 1, y: 0, scale: 1, rotateX: 0 }}
+                  whileInView={{ opacity: 1, y: 0, scale: 1, rotateX: 0 }}
                   viewport={{ once: true, amount: 0.2 }}
                   transition={{ duration: 0.65, ease: "easeOut", delay: i * 0.14 }}
                   whileHover={{
@@ -391,7 +391,7 @@ export function ConversionLandingPage() {
                   </motion.div>
                   <motion.p
                     initial={{ opacity: 0, y: 8 }}
-                    viewport={{ once: true, margin: "-50px" }} whileInView={{ opacity: 1, y: 0 }}
+                    whileInView={{ opacity: 1, y: 0 }}
                     viewport={{ once: true }}
                     transition={{ delay: i * 0.12 + 0.12, duration: 0.35 }}
                     className="text-xl font-semibold"
@@ -400,7 +400,7 @@ export function ConversionLandingPage() {
                   </motion.p>
                   <motion.p
                     initial={{ opacity: 0, y: 8 }}
-                    viewport={{ once: true, margin: "-50px" }} whileInView={{ opacity: 1, y: 0 }}
+                    whileInView={{ opacity: 1, y: 0 }}
                     viewport={{ once: true }}
                     transition={{ delay: i * 0.12 + 0.24, duration: 0.35 }}
                     className="mt-2 text-sm text-[#0F1C3F]"
@@ -418,7 +418,7 @@ export function ConversionLandingPage() {
       <motion.section
         id="why"
         initial={{ opacity: 0 }}
-        viewport={{ once: true, margin: "-50px" }} whileInView={{ opacity: 1 }}
+        whileInView={{ opacity: 1 }}
         viewport={{ once: true, amount: 0.15 }}
         className={sectionClass + " relative overflow-hidden bg-transparent"}
         onMouseMove={(event) => {
@@ -437,7 +437,7 @@ export function ConversionLandingPage() {
         <div className="relative z-10 mx-auto grid max-w-[1240px] gap-8 px-4 md:grid-cols-2 md:px-6" style={{ perspective: "1200px" }}>
           <motion.div
             initial={{ opacity: 0, x: -80 }}
-            viewport={{ once: true, margin: "-50px" }} whileInView={{ opacity: 1, x: 0 }}
+            whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true, amount: 0.3 }}
             transition={{ duration: 0.7, ease: "easeOut" }}
             className="rounded-3xl border border-[#0A1128]/15 bg-gradient-to-br from-[#FAF6EE] to-[#FAF6EE] p-8 backdrop-blur-lg"
@@ -452,7 +452,7 @@ export function ConversionLandingPage() {
                     key={item}
                     type="button"
                     initial={{ opacity: 0, x: -40 }}
-                    viewport={{ once: true, margin: "-50px" }} whileInView={{ opacity: 1, x: 0 }}
+                    whileInView={{ opacity: 1, x: 0 }}
                     viewport={{ once: true, amount: 0.4 }}
                     transition={{ duration: 0.55, ease: "easeOut", delay: idx * 0.08 }}
                     onClick={() => setExpandedFeature(isOpen ? -1 : idx)}
@@ -482,7 +482,7 @@ export function ConversionLandingPage() {
           </motion.div>
           <motion.div
             initial={{ opacity: 0, x: 80 }}
-            viewport={{ once: true, margin: "-50px" }} whileInView={{ opacity: 1, x: 0 }}
+            whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true, amount: 0.3 }}
             transition={{ duration: 0.7, ease: "easeOut" }}
             className="relative overflow-hidden rounded-3xl border border-[#0A1128]/15 bg-[radial-gradient(circle_at_20%_20%,rgba(212,175,55,0.28),transparent_52%),linear-gradient(160deg,#151515,#090909)] p-8"
@@ -517,7 +517,7 @@ export function ConversionLandingPage() {
       <motion.section
         id="reviews"
         initial={{ opacity: 0 }}
-        viewport={{ once: true, margin: "-50px" }} whileInView={{ opacity: 1 }}
+        whileInView={{ opacity: 1 }}
         viewport={{ once: true, amount: 0.2 }}
         className={sectionClass + " relative overflow-hidden bg-transparent"}
       >
@@ -622,7 +622,7 @@ export function ConversionLandingPage() {
       <motion.section
         id="eligibility"
         initial={{ opacity: 0, y: 60 }}
-        viewport={{ once: true, margin: "-50px" }} whileInView={{ opacity: 1, y: 0 }}
+        whileInView={{ opacity: 1, y: 0 }}
         viewport={{ once: true, amount: 0.2 }}
         transition={{ duration: 0.7, ease: "easeOut" }}
         className={sectionClass + " relative overflow-hidden bg-gradient-to-br from-[#FAF6EE] via-[#FDFBF7] to-[#FAF6EE]"}
@@ -700,7 +700,7 @@ export function ConversionLandingPage() {
 
       <motion.section
         initial={{ opacity: 0, y: 60 }}
-        viewport={{ once: true, margin: "-50px" }} whileInView={{ opacity: 1, y: 0 }}
+        whileInView={{ opacity: 1, y: 0 }}
         viewport={{ once: true, amount: 0.2 }}
         transition={{ duration: 0.7, ease: "easeOut" }}
         className={sectionClass + " relative overflow-hidden bg-transparent"}
@@ -812,7 +812,7 @@ function LiveStatCard({ title, value, delay }: { title: string; value: string; d
   return (
     <motion.div
       initial={{ opacity: 0, y: 20 }}
-      viewport={{ once: true, margin: "-50px" }} whileInView={{ opacity: 1, y: 0 }}
+      whileInView={{ opacity: 1, y: 0 }}
       viewport={{ once: true, amount: 0.5 }}
       transition={{ duration: 0.55, delay, ease: "easeOut" }}
       animate={{ y: [-5, 5, -5] }}

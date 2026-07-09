@@ -26,14 +26,14 @@
       "static/chunks/618f8807-81e86a29e193f34f.js",
       "static/chunks/2364-073c38254b084c0b.js",
       "static/chunks/main-app-27c5e8a2f0e43597.js",
-      "static/chunks/app/[slug]/page-1d52e7a0b158ae56.js"
+      "static/chunks/app/[slug]/page-5a89e1007966d3bb.js"
     ],
     "/blog/[slug]/page": [
       "static/chunks/webpack-cbe10e423ca94213.js",
       "static/chunks/618f8807-81e86a29e193f34f.js",
       "static/chunks/2364-073c38254b084c0b.js",
       "static/chunks/main-app-27c5e8a2f0e43597.js",
-      "static/chunks/app/blog/[slug]/page-f936a274a68c37bd.js"
+      "static/chunks/app/blog/[slug]/page-9ccac415d5c82921.js"
     ],
     "/blog/page": [
       "static/chunks/webpack-cbe10e423ca94213.js",
@@ -55,26 +55,26 @@
       "static/chunks/4610-d3d0438780e69b3d.js",
       "static/chunks/app/careers/page-cf68cfc23c9490ed.js"
     ],
-    "/loans/[type]/page": [
-      "static/chunks/webpack-cbe10e423ca94213.js",
-      "static/chunks/618f8807-81e86a29e193f34f.js",
-      "static/chunks/2364-073c38254b084c0b.js",
-      "static/chunks/main-app-27c5e8a2f0e43597.js",
-      "static/chunks/app/loans/[type]/page-0c62108036b59b4a.js"
-    ],
     "/legal/privacy/page": [
       "static/chunks/webpack-cbe10e423ca94213.js",
       "static/chunks/618f8807-81e86a29e193f34f.js",
       "static/chunks/2364-073c38254b084c0b.js",
       "static/chunks/main-app-27c5e8a2f0e43597.js",
-      "static/chunks/app/legal/privacy/page-987304ce4cb9017b.js"
+      "static/chunks/app/legal/privacy/page-c8d051de6e79715b.js"
     ],
     "/legal/terms/page": [
       "static/chunks/webpack-cbe10e423ca94213.js",
       "static/chunks/618f8807-81e86a29e193f34f.js",
       "static/chunks/2364-073c38254b084c0b.js",
       "static/chunks/main-app-27c5e8a2f0e43597.js",
-      "static/chunks/app/legal/terms/page-d4555913503b80f6.js"
+      "static/chunks/app/legal/terms/page-04551673caf96b65.js"
+    ],
+    "/loans/[type]/page": [
+      "static/chunks/webpack-cbe10e423ca94213.js",
+      "static/chunks/618f8807-81e86a29e193f34f.js",
+      "static/chunks/2364-073c38254b084c0b.js",
+      "static/chunks/main-app-27c5e8a2f0e43597.js",
+      "static/chunks/app/loans/[type]/page-0c62108036b59b4a.js"
     ],
     "/loans/business/page": [
       "static/chunks/webpack-cbe10e423ca94213.js",
@@ -90,7 +90,7 @@
       "static/chunks/3175-7d38c5316e9a3b3c.js",
       "static/chunks/app/loans/business/page-b1816fba96ea4821.js"
     ],
-    "/loans/car/page": [
+    "/loans/loan-against-property/page": [
       "static/chunks/webpack-cbe10e423ca94213.js",
       "static/chunks/618f8807-81e86a29e193f34f.js",
       "static/chunks/2364-073c38254b084c0b.js",
@@ -102,7 +102,7 @@
       "static/chunks/8653-2c25890788923441.js",
       "static/chunks/387-cf79347a3522012d.js",
       "static/chunks/3175-7d38c5316e9a3b3c.js",
-      "static/chunks/app/loans/car/page-e825336ede9d3081.js"
+      "static/chunks/app/loans/loan-against-property/page-6aaa8699844c0705.js"
     ],
     "/loans/education/page": [
       "static/chunks/webpack-cbe10e423ca94213.js",
@@ -118,18 +118,7 @@
       "static/chunks/3175-7d38c5316e9a3b3c.js",
       "static/chunks/app/loans/education/page-723e07feee123e2e.js"
     ],
-    "/page": [
-      "static/chunks/webpack-cbe10e423ca94213.js",
-      "static/chunks/618f8807-81e86a29e193f34f.js",
-      "static/chunks/2364-073c38254b084c0b.js",
-      "static/chunks/main-app-27c5e8a2f0e43597.js",
-      "static/chunks/2232-92c9426e1d5e6f69.js",
-      "static/chunks/9485-c31700c70d3ac306.js",
-      "static/chunks/1504-b9fead809c63ba55.js",
-      "static/chunks/7285-a72c16ae7ee98d65.js",
-      "static/chunks/app/page-1dd88e6825fa6606.js"
-    ],
-    "/loans/loan-against-property/page": [
+    "/loans/car/page": [
       "static/chunks/webpack-cbe10e423ca94213.js",
       "static/chunks/618f8807-81e86a29e193f34f.js",
       "static/chunks/2364-073c38254b084c0b.js",
@@ -141,7 +130,7 @@
       "static/chunks/8653-2c25890788923441.js",
       "static/chunks/387-cf79347a3522012d.js",
       "static/chunks/3175-7d38c5316e9a3b3c.js",
-      "static/chunks/app/loans/loan-against-property/page-6aaa8699844c0705.js"
+      "static/chunks/app/loans/car/page-e825336ede9d3081.js"
     ],
     "/login/page": [
       "static/chunks/webpack-cbe10e423ca94213.js",
@@ -154,6 +143,17 @@
       "static/chunks/7333-cfb7cd2e5cbb7459.js",
       "static/chunks/app/login/page-59c5fe3b79078a56.js"
     ],
+    "/page": [
+      "static/chunks/webpack-cbe10e423ca94213.js",
+      "static/chunks/618f8807-81e86a29e193f34f.js",
+      "static/chunks/2364-073c38254b084c0b.js",
+      "static/chunks/main-app-27c5e8a2f0e43597.js",
+      "static/chunks/2232-92c9426e1d5e6f69.js",
+      "static/chunks/9485-c31700c70d3ac306.js",
+      "static/chunks/1504-b9fead809c63ba55.js",
+      "static/chunks/7285-a72c16ae7ee98d65.js",
+      "static/chunks/app/page-b04baa7877a594cd.js"
+    ],
     "/contact/page": [
       "static/chunks/webpack-cbe10e423ca94213.js",
       "static/chunks/618f8807-81e86a29e193f34f.js",
@@ -161,12 +161,13 @@
       "static/chunks/main-app-27c5e8a2f0e43597.js",
       "static/chunks/app/contact/page-4846cb8330c90adb.js"
     ],
-    "/admin/page": [
+    "/admin/dashboard/page": [
       "static/chunks/webpack-cbe10e423ca94213.js",
       "static/chunks/618f8807-81e86a29e193f34f.js",
       "static/chunks/2364-073c38254b084c0b.js",
       "static/chunks/main-app-27c5e8a2f0e43597.js",
-      "static/chunks/app/admin/page-a7d8335b32c4d032.js"
+      "static/chunks/2359-dede1e4f90c438c3.js",
+      "static/chunks/app/admin/dashboard/page-bf7290cee87ccd74.js"
     ],
     "/admin/layout": [
       "static/chunks/webpack-cbe10e423ca94213.js",
@@ -177,20 +178,6 @@
       "static/chunks/9485-c31700c70d3ac306.js",
       "static/chunks/app/admin/layout-5497a6c50e44b9e3.js"
     ],
-    "/admin/seo-health/page": [
-      "static/chunks/webpack-cbe10e423ca94213.js",
-      "static/chunks/618f8807-81e86a29e193f34f.js",
-      "static/chunks/2364-073c38254b084c0b.js",
-      "static/chunks/main-app-27c5e8a2f0e43597.js",
-      "static/chunks/app/admin/seo-health/page-93c8534216e35e1a.js"
-    ],
-    "/admin/leads/page": [
-      "static/chunks/webpack-cbe10e423ca94213.js",
-      "static/chunks/618f8807-81e86a29e193f34f.js",
-      "static/chunks/2364-073c38254b084c0b.js",
-      "static/chunks/main-app-27c5e8a2f0e43597.js",
-      "static/chunks/app/admin/leads/page-22ee428f1b780645.js"
-    ],
     "/admin/login/page": [
       "static/chunks/webpack-cbe10e423ca94213.js",
       "static/chunks/618f8807-81e86a29e193f34f.js",
@@ -200,13 +187,19 @@
       "static/chunks/9810-b2de76eb414edc5c.js",
       "static/chunks/app/admin/login/page-3861071b06abb461.js"
     ],
-    "/admin/dashboard/page": [
+    "/admin/page": [
       "static/chunks/webpack-cbe10e423ca94213.js",
       "static/chunks/618f8807-81e86a29e193f34f.js",
       "static/chunks/2364-073c38254b084c0b.js",
       "static/chunks/main-app-27c5e8a2f0e43597.js",
-      "static/chunks/2359-dede1e4f90c438c3.js",
-      "static/chunks/app/admin/dashboard/page-bf7290cee87ccd74.js"
+      "static/chunks/app/admin/page-b9f716efe07941af.js"
+    ],
+    "/admin/leads/page": [
+      "static/chunks/webpack-cbe10e423ca94213.js",
+      "static/chunks/618f8807-81e86a29e193f34f.js",
+      "static/chunks/2364-073c38254b084c0b.js",
+      "static/chunks/main-app-27c5e8a2f0e43597.js",
+      "static/chunks/app/admin/leads/page-22ee428f1b780645.js"
     ],
     "/admin/settings/page": [
       "static/chunks/webpack-cbe10e423ca94213.js",
@@ -215,14 +208,19 @@
       "static/chunks/main-app-27c5e8a2f0e43597.js",
       "static/chunks/app/admin/settings/page-b78a55e9fd132494.js"
     ],
-    "/portal/dashboard/page": [
+    "/admin/seo-health/page": [
       "static/chunks/webpack-cbe10e423ca94213.js",
       "static/chunks/618f8807-81e86a29e193f34f.js",
       "static/chunks/2364-073c38254b084c0b.js",
       "static/chunks/main-app-27c5e8a2f0e43597.js",
-      "static/chunks/2232-92c9426e1d5e6f69.js",
-      "static/chunks/9485-c31700c70d3ac306.js",
-      "static/chunks/app/portal/dashboard/page-8dfde68e6808a214.js"
+      "static/chunks/app/admin/seo-health/page-93c8534216e35e1a.js"
+    ],
+    "/portal/documents/page": [
+      "static/chunks/webpack-cbe10e423ca94213.js",
+      "static/chunks/618f8807-81e86a29e193f34f.js",
+      "static/chunks/2364-073c38254b084c0b.js",
+      "static/chunks/main-app-27c5e8a2f0e43597.js",
+      "static/chunks/app/portal/documents/page-a869cb02312039b5.js"
     ],
     "/portal/layout": [
       "static/chunks/webpack-cbe10e423ca94213.js",
@@ -234,19 +232,21 @@
       "static/chunks/1504-b9fead809c63ba55.js",
       "static/chunks/app/portal/layout-601eba3adb9c9482.js"
     ],
+    "/portal/dashboard/page": [
+      "static/chunks/webpack-cbe10e423ca94213.js",
+      "static/chunks/618f8807-81e86a29e193f34f.js",
+      "static/chunks/2364-073c38254b084c0b.js",
+      "static/chunks/main-app-27c5e8a2f0e43597.js",
+      "static/chunks/2232-92c9426e1d5e6f69.js",
+      "static/chunks/9485-c31700c70d3ac306.js",
+      "static/chunks/app/portal/dashboard/page-8dfde68e6808a214.js"
+    ],
     "/portal/profile/page": [
       "static/chunks/webpack-cbe10e423ca94213.js",
       "static/chunks/618f8807-81e86a29e193f34f.js",
       "static/chunks/2364-073c38254b084c0b.js",
       "static/chunks/main-app-27c5e8a2f0e43597.js",
       "static/chunks/app/portal/profile/page-2cfb05887939bda9.js"
-    ],
-    "/portal/documents/page": [
-      "static/chunks/webpack-cbe10e423ca94213.js",
-      "static/chunks/618f8807-81e86a29e193f34f.js",
-      "static/chunks/2364-073c38254b084c0b.js",
-      "static/chunks/main-app-27c5e8a2f0e43597.js",
-      "static/chunks/app/portal/documents/page-a869cb02312039b5.js"
     ],
     "/eligibility/page": [
       "static/chunks/webpack-cbe10e423ca94213.js",
@@ -261,7 +261,7 @@
       "static/chunks/618f8807-81e86a29e193f34f.js",
       "static/chunks/2364-073c38254b084c0b.js",
       "static/chunks/main-app-27c5e8a2f0e43597.js",
-      "static/chunks/app/eligibility/layout-a910b359c6cb3b55.js"
+      "static/chunks/app/eligibility/layout-3d41791ab072ab2c.js"
     ],
     "/credit-score/page": [
       "static/chunks/webpack-cbe10e423ca94213.js",
@@ -279,7 +279,84 @@
       "static/chunks/618f8807-81e86a29e193f34f.js",
       "static/chunks/2364-073c38254b084c0b.js",
       "static/chunks/main-app-27c5e8a2f0e43597.js",
-      "static/chunks/app/credit-score/layout-7cf81f4e5c61bdfb.js"
+      "static/chunks/app/credit-score/layout-f5c8f01562e58d59.js"
+    ],
+    "/klfpro-healthcare/faq/page": [
+      "static/chunks/webpack-cbe10e423ca94213.js",
+      "static/chunks/618f8807-81e86a29e193f34f.js",
+      "static/chunks/2364-073c38254b084c0b.js",
+      "static/chunks/main-app-27c5e8a2f0e43597.js",
+      "static/chunks/2232-92c9426e1d5e6f69.js",
+      "static/chunks/8461-a0de36589884e190.js",
+      "static/chunks/app/klfpro-healthcare/faq/page-dc3229a7836356bf.js"
+    ],
+    "/klfpro-healthcare/layout": [
+      "static/chunks/webpack-cbe10e423ca94213.js",
+      "static/chunks/618f8807-81e86a29e193f34f.js",
+      "static/chunks/2364-073c38254b084c0b.js",
+      "static/chunks/main-app-27c5e8a2f0e43597.js",
+      "static/chunks/2232-92c9426e1d5e6f69.js",
+      "static/chunks/9485-c31700c70d3ac306.js",
+      "static/chunks/4934-ad47080f61d8c4a1.js",
+      "static/chunks/1060-2e76b3d017226050.js",
+      "static/chunks/app/klfpro-healthcare/layout-c95fe3ae96127069.js"
+    ],
+    "/klfpro-healthcare/careers/page": [
+      "static/chunks/webpack-cbe10e423ca94213.js",
+      "static/chunks/618f8807-81e86a29e193f34f.js",
+      "static/chunks/2364-073c38254b084c0b.js",
+      "static/chunks/main-app-27c5e8a2f0e43597.js",
+      "static/chunks/2232-92c9426e1d5e6f69.js",
+      "static/chunks/8206-5b0b253e12da4f32.js",
+      "static/chunks/app/klfpro-healthcare/careers/page-22b7f464a0c310bd.js"
+    ],
+    "/klfpro-healthcare/about/page": [
+      "static/chunks/webpack-cbe10e423ca94213.js",
+      "static/chunks/618f8807-81e86a29e193f34f.js",
+      "static/chunks/2364-073c38254b084c0b.js",
+      "static/chunks/main-app-27c5e8a2f0e43597.js",
+      "static/chunks/2232-92c9426e1d5e6f69.js",
+      "static/chunks/9485-c31700c70d3ac306.js",
+      "static/chunks/1504-b9fead809c63ba55.js",
+      "static/chunks/8206-5b0b253e12da4f32.js",
+      "static/chunks/1060-2e76b3d017226050.js",
+      "static/chunks/app/klfpro-healthcare/about/page-aab0ac541381d8b4.js"
+    ],
+    "/klfpro-healthcare/page": [
+      "static/chunks/webpack-cbe10e423ca94213.js",
+      "static/chunks/618f8807-81e86a29e193f34f.js",
+      "static/chunks/2364-073c38254b084c0b.js",
+      "static/chunks/main-app-27c5e8a2f0e43597.js",
+      "static/chunks/2232-92c9426e1d5e6f69.js",
+      "static/chunks/9485-c31700c70d3ac306.js",
+      "static/chunks/1504-b9fead809c63ba55.js",
+      "static/chunks/8206-5b0b253e12da4f32.js",
+      "static/chunks/1060-2e76b3d017226050.js",
+      "static/chunks/app/klfpro-healthcare/page-05f60fb1e992080d.js"
+    ],
+    "/klfpro-healthcare/services/page": [
+      "static/chunks/webpack-cbe10e423ca94213.js",
+      "static/chunks/618f8807-81e86a29e193f34f.js",
+      "static/chunks/2364-073c38254b084c0b.js",
+      "static/chunks/main-app-27c5e8a2f0e43597.js",
+      "static/chunks/2232-92c9426e1d5e6f69.js",
+      "static/chunks/9485-c31700c70d3ac306.js",
+      "static/chunks/1504-b9fead809c63ba55.js",
+      "static/chunks/8206-5b0b253e12da4f32.js",
+      "static/chunks/1060-2e76b3d017226050.js",
+      "static/chunks/app/klfpro-healthcare/services/page-b7c40e35f1644920.js"
+    ],
+    "/klfpro-healthcare/services/[slug]/page": [
+      "static/chunks/webpack-cbe10e423ca94213.js",
+      "static/chunks/618f8807-81e86a29e193f34f.js",
+      "static/chunks/2364-073c38254b084c0b.js",
+      "static/chunks/main-app-27c5e8a2f0e43597.js",
+      "static/chunks/2232-92c9426e1d5e6f69.js",
+      "static/chunks/9485-c31700c70d3ac306.js",
+      "static/chunks/1504-b9fead809c63ba55.js",
+      "static/chunks/8206-5b0b253e12da4f32.js",
+      "static/chunks/1060-2e76b3d017226050.js",
+      "static/chunks/app/klfpro-healthcare/services/[slug]/page-3ec4707ee3935b2a.js"
     ],
     "/loans/home/page": [
       "static/chunks/webpack-cbe10e423ca94213.js",
@@ -300,7 +377,7 @@
       "static/chunks/618f8807-81e86a29e193f34f.js",
       "static/chunks/2364-073c38254b084c0b.js",
       "static/chunks/main-app-27c5e8a2f0e43597.js",
-      "static/chunks/app/loans/home/layout-a0f0bbdd7df51883.js"
+      "static/chunks/app/loans/home/layout-8a8109ebb380e964.js"
     ],
     "/emi-calculator/page": [
       "static/chunks/webpack-cbe10e423ca94213.js",
@@ -316,84 +393,7 @@
       "static/chunks/618f8807-81e86a29e193f34f.js",
       "static/chunks/2364-073c38254b084c0b.js",
       "static/chunks/main-app-27c5e8a2f0e43597.js",
-      "static/chunks/app/emi-calculator/layout-463d6ed36c848188.js"
-    ],
-    "/klfpro-healthcare/page": [
-      "static/chunks/webpack-cbe10e423ca94213.js",
-      "static/chunks/618f8807-81e86a29e193f34f.js",
-      "static/chunks/2364-073c38254b084c0b.js",
-      "static/chunks/main-app-27c5e8a2f0e43597.js",
-      "static/chunks/2232-92c9426e1d5e6f69.js",
-      "static/chunks/9485-c31700c70d3ac306.js",
-      "static/chunks/1504-b9fead809c63ba55.js",
-      "static/chunks/8206-5b0b253e12da4f32.js",
-      "static/chunks/1060-2e76b3d017226050.js",
-      "static/chunks/app/klfpro-healthcare/page-05f60fb1e992080d.js"
-    ],
-    "/klfpro-healthcare/layout": [
-      "static/chunks/webpack-cbe10e423ca94213.js",
-      "static/chunks/618f8807-81e86a29e193f34f.js",
-      "static/chunks/2364-073c38254b084c0b.js",
-      "static/chunks/main-app-27c5e8a2f0e43597.js",
-      "static/chunks/2232-92c9426e1d5e6f69.js",
-      "static/chunks/9485-c31700c70d3ac306.js",
-      "static/chunks/4934-ad47080f61d8c4a1.js",
-      "static/chunks/1060-2e76b3d017226050.js",
-      "static/chunks/app/klfpro-healthcare/layout-c95fe3ae96127069.js"
-    ],
-    "/klfpro-healthcare/faq/page": [
-      "static/chunks/webpack-cbe10e423ca94213.js",
-      "static/chunks/618f8807-81e86a29e193f34f.js",
-      "static/chunks/2364-073c38254b084c0b.js",
-      "static/chunks/main-app-27c5e8a2f0e43597.js",
-      "static/chunks/2232-92c9426e1d5e6f69.js",
-      "static/chunks/8461-a0de36589884e190.js",
-      "static/chunks/app/klfpro-healthcare/faq/page-dc3229a7836356bf.js"
-    ],
-    "/klfpro-healthcare/careers/page": [
-      "static/chunks/webpack-cbe10e423ca94213.js",
-      "static/chunks/618f8807-81e86a29e193f34f.js",
-      "static/chunks/2364-073c38254b084c0b.js",
-      "static/chunks/main-app-27c5e8a2f0e43597.js",
-      "static/chunks/2232-92c9426e1d5e6f69.js",
-      "static/chunks/8206-5b0b253e12da4f32.js",
-      "static/chunks/app/klfpro-healthcare/careers/page-22b7f464a0c310bd.js"
-    ],
-    "/klfpro-healthcare/services/page": [
-      "static/chunks/webpack-cbe10e423ca94213.js",
-      "static/chunks/618f8807-81e86a29e193f34f.js",
-      "static/chunks/2364-073c38254b084c0b.js",
-      "static/chunks/main-app-27c5e8a2f0e43597.js",
-      "static/chunks/2232-92c9426e1d5e6f69.js",
-      "static/chunks/9485-c31700c70d3ac306.js",
-      "static/chunks/1504-b9fead809c63ba55.js",
-      "static/chunks/8206-5b0b253e12da4f32.js",
-      "static/chunks/1060-2e76b3d017226050.js",
-      "static/chunks/app/klfpro-healthcare/services/page-b7c40e35f1644920.js"
-    ],
-    "/klfpro-healthcare/about/page": [
-      "static/chunks/webpack-cbe10e423ca94213.js",
-      "static/chunks/618f8807-81e86a29e193f34f.js",
-      "static/chunks/2364-073c38254b084c0b.js",
-      "static/chunks/main-app-27c5e8a2f0e43597.js",
-      "static/chunks/2232-92c9426e1d5e6f69.js",
-      "static/chunks/9485-c31700c70d3ac306.js",
-      "static/chunks/1504-b9fead809c63ba55.js",
-      "static/chunks/8206-5b0b253e12da4f32.js",
-      "static/chunks/1060-2e76b3d017226050.js",
-      "static/chunks/app/klfpro-healthcare/about/page-aab0ac541381d8b4.js"
-    ],
-    "/klfpro-healthcare/services/[slug]/page": [
-      "static/chunks/webpack-cbe10e423ca94213.js",
-      "static/chunks/618f8807-81e86a29e193f34f.js",
-      "static/chunks/2364-073c38254b084c0b.js",
-      "static/chunks/main-app-27c5e8a2f0e43597.js",
-      "static/chunks/2232-92c9426e1d5e6f69.js",
-      "static/chunks/9485-c31700c70d3ac306.js",
-      "static/chunks/1504-b9fead809c63ba55.js",
-      "static/chunks/8206-5b0b253e12da4f32.js",
-      "static/chunks/1060-2e76b3d017226050.js",
-      "static/chunks/app/klfpro-healthcare/services/[slug]/page-3ec4707ee3935b2a.js"
+      "static/chunks/app/emi-calculator/layout-a35da3c3269a2929.js"
     ],
     "/loans/personal-loan/page": [
       "static/chunks/webpack-cbe10e423ca94213.js",
@@ -414,16 +414,16 @@
       "static/chunks/618f8807-81e86a29e193f34f.js",
       "static/chunks/2364-073c38254b084c0b.js",
       "static/chunks/main-app-27c5e8a2f0e43597.js",
-      "static/chunks/app/loans/personal-loan/layout-86c25589cf76e57e.js"
+      "static/chunks/app/loans/personal-loan/layout-1308d29e4c05d97e.js"
     ],
-    "/klfpro-healthcare/admin/jobs/page": [
+    "/klfpro-healthcare/admin/page": [
       "static/chunks/webpack-cbe10e423ca94213.js",
       "static/chunks/618f8807-81e86a29e193f34f.js",
       "static/chunks/2364-073c38254b084c0b.js",
       "static/chunks/main-app-27c5e8a2f0e43597.js",
       "static/chunks/2232-92c9426e1d5e6f69.js",
-      "static/chunks/5141-f73e73cc08ef385f.js",
-      "static/chunks/app/klfpro-healthcare/admin/jobs/page-75a3df4f4919a043.js"
+      "static/chunks/9485-c31700c70d3ac306.js",
+      "static/chunks/app/klfpro-healthcare/admin/page-217fe7d35d1055f3.js"
     ],
     "/klfpro-healthcare/admin/layout": [
       "static/chunks/webpack-cbe10e423ca94213.js",
@@ -441,21 +441,21 @@
       "static/chunks/main-app-27c5e8a2f0e43597.js",
       "static/chunks/app/klfpro-healthcare/admin/login/page-8728e5463fa68bf6.js"
     ],
-    "/klfpro-healthcare/admin/page": [
-      "static/chunks/webpack-cbe10e423ca94213.js",
-      "static/chunks/618f8807-81e86a29e193f34f.js",
-      "static/chunks/2364-073c38254b084c0b.js",
-      "static/chunks/main-app-27c5e8a2f0e43597.js",
-      "static/chunks/2232-92c9426e1d5e6f69.js",
-      "static/chunks/9485-c31700c70d3ac306.js",
-      "static/chunks/app/klfpro-healthcare/admin/page-217fe7d35d1055f3.js"
-    ],
     "/klfpro-healthcare/admin/submissions/page": [
       "static/chunks/webpack-cbe10e423ca94213.js",
       "static/chunks/618f8807-81e86a29e193f34f.js",
       "static/chunks/2364-073c38254b084c0b.js",
       "static/chunks/main-app-27c5e8a2f0e43597.js",
       "static/chunks/app/klfpro-healthcare/admin/submissions/page-ffcfae7b8372d9d1.js"
+    ],
+    "/klfpro-healthcare/admin/jobs/page": [
+      "static/chunks/webpack-cbe10e423ca94213.js",
+      "static/chunks/618f8807-81e86a29e193f34f.js",
+      "static/chunks/2364-073c38254b084c0b.js",
+      "static/chunks/main-app-27c5e8a2f0e43597.js",
+      "static/chunks/2232-92c9426e1d5e6f69.js",
+      "static/chunks/5141-f73e73cc08ef385f.js",
+      "static/chunks/app/klfpro-healthcare/admin/jobs/page-75a3df4f4919a043.js"
     ]
   }
 }

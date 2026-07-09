@@ -3,8 +3,16 @@ import { HealthcareNavbar } from "@/components/healthcare/HealthcareNavbar";
 import { HealthcareFooter } from "@/components/healthcare/HealthcareFooter";
 
 export const metadata: Metadata = {
+  metadataBase: new URL("https://klfprohealthcare.com"),
   title: "KLFPRO Healthcare | Premium Revenue Cycle & Solutions",
   description: "End-to-end healthcare solutions, revenue cycle management, medical billing, and BPO services to optimize your financial performance.",
+  openGraph: {
+    title: "KLFPRO Healthcare | Premium Revenue Cycle & Solutions",
+    description: "End-to-end healthcare solutions, revenue cycle management, medical billing, and BPO services to optimize your financial performance.",
+    url: "https://klfprohealthcare.com",
+    siteName: "KLFPRO Healthcare",
+    type: "website"
+  },
 };
 
 export default function HealthcareLayout({ children }: { children: React.ReactNode }) {

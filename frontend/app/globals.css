@@ -1,0 +1,200 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  @apply bg-[#f9fafb] text-[#0A1128] antialiased dark:bg-slate-950 dark:text-[#0A1128];
+}
+
+.container-pro {
+  @apply mx-auto w-full max-w-7xl px-4 md:px-6;
+}
+
+.interactive-lift {
+  transition:
+    transform 220ms cubic-bezier(0.22, 1, 0.36, 1),
+    box-shadow 220ms cubic-bezier(0.22, 1, 0.36, 1),
+    filter 220ms ease;
+  will-change: transform;
+}
+
+.interactive-lift:hover {
+  transform: translateY(-2px);
+}
+
+.interactive-lift:active {
+  transform: translateY(-1px) scale(0.995);
+}
+
+.futuristic-dark-bg {
+  position: relative;
+  overflow: hidden;
+  background:
+    radial-gradient(120% 80% at 10% -5%, rgba(45, 212, 191, 0.08), transparent 60%),
+    radial-gradient(90% 65% at 90% 110%, rgba(99, 102, 241, 0.08), transparent 58%),
+    linear-gradient(160deg, #4A0E1B 0%, #310912 52%, #1a050a 100%);
+}
+
+.futuristic-dark-bg::before,
+.futuristic-dark-bg::after {
+  content: "";
+  pointer-events: none;
+  position: absolute;
+  inset: -35%;
+  mix-blend-mode: screen;
+}
+
+.futuristic-dark-bg::before {
+  background:
+    radial-gradient(circle at 22% 40%, rgba(45, 212, 191, 0.16), transparent 38%),
+    radial-gradient(circle at 70% 65%, rgba(34, 197, 94, 0.1), transparent 40%);
+  filter: blur(30px);
+  animation: driftGlow 16s ease-in-out infinite alternate;
+}
+
+.futuristic-dark-bg::after {
+  background:
+    linear-gradient(120deg, transparent 35%, rgba(255, 255, 255, 0.05) 50%, transparent 65%),
+    linear-gradient(45deg, transparent 40%, rgba(255, 255, 255, 0.04) 55%, transparent 70%);
+  opacity: 0.35;
+  animation: scanShift 22s linear infinite;
+}
+
+@keyframes driftGlow {
+  0% {
+    transform: translate3d(-1.2%, -1.5%, 0) scale(1);
+  }
+  100% {
+    transform: translate3d(1.4%, 1.2%, 0) scale(1.04);
+  }
+}
+
+@keyframes scanShift {
+  0% {
+    transform: translate3d(-4%, 0, 0);
+  }
+  100% {
+    transform: translate3d(4%, 0, 0);
+  }
+}
+
+/* KLFPRO futuristic dashboard */
+@keyframes klf-orbit {
+  0% {
+    transform: rotate(0deg) translateX(42px) rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg) translateX(42px) rotate(-360deg);
+  }
+}
+
+@keyframes klf-pulse-glow {
+  0%,
+  100% {
+    opacity: 0.45;
+    transform: scale(1);
+  }
+  50% {
+    opacity: 0.85;
+    transform: scale(1.08);
+  }
+}
+
+@keyframes klf-scan {
+  0% {
+    transform: translateY(-100%);
+  }
+  100% {
+    transform: translateY(100%);
+  }
+}
+
+.klf-grid-bg {
+  background-image:
+    linear-gradient(rgba(250, 204, 21, 0.028) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(250, 204, 21, 0.028) 1px, transparent 1px);
+  background-size: 56px 56px;
+}
+
+@keyframes klf-hero-grid-drift {
+  0% {
+    background-position: 0 0;
+  }
+  100% {
+    background-position: 56px 56px;
+  }
+}
+
+.klf-hero-grid-motion {
+  background-image:
+    linear-gradient(rgba(148, 163, 184, 0.07) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(148, 163, 184, 0.07) 1px, transparent 1px);
+  background-size: 56px 56px;
+  animation: klf-hero-grid-drift 28s linear infinite;
+}
+
+@keyframes klf-gold-shimmer {
+  0% {
+    background-position: 0% 50%;
+  }
+  100% {
+    background-position: 200% 50%;
+  }
+}
+
+.klf-gold-shimmer-text {
+  background-image: linear-gradient(
+    90deg,
+    #fde68a 0%,
+    #facc15 25%,
+    #fef3c7 50%,
+    #facc15 75%,
+    #fde68a 100%
+  );
+  background-size: 200% auto;
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  animation: klf-gold-shimmer 7s linear infinite;
+}
+
+.klf-video-frame {
+  position: relative;
+  overflow: hidden;
+  border-radius: 1.25rem;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  box-shadow:
+    0 0 0 1px rgba(250, 204, 21, 0.12) inset,
+    0 32px 64px -28px rgba(0, 0, 0, 0.55),
+    0 0 0 1px rgba(0, 0, 0, 0.2);
+}
+
+/* Softens stock watermarks in bottom-right of hero imagery */
+.klf-media-watermark-fade {
+  pointer-events: none;
+  position: absolute;
+  inset: 0;
+  z-index: 2;
+  background:
+    radial-gradient(ellipse 85% 55% at 88% 96%, rgba(2, 6, 23, 0.92) 0%, transparent 55%),
+    linear-gradient(to top, rgba(2, 6, 23, 0.55) 0%, transparent 38%);
+}
+
+.klf-scanlines::after {
+  content: "";
+  pointer-events: none;
+  position: absolute;
+  inset: 0;
+  background: repeating-linear-gradient(
+    0deg,
+    transparent,
+    transparent 2px,
+    rgba(0, 0, 0, 0.08) 2px,
+    rgba(0, 0, 0, 0.08) 4px
+  );
+  opacity: 0.2;
+}

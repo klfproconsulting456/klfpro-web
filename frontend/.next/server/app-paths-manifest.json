@@ -1,0 +1,11 @@
+{
+  "/page": "app/page.js",
+  "/klfpro-healthcare/page": "app/klfpro-healthcare/page.js",
+  "/loans/personal-loan/page": "app/loans/personal-loan/page.js",
+  "/loans/[type]/page": "app/loans/[type]/page.js",
+  "/careers/page": "app/careers/page.js",
+  "/loans/business/page": "app/loans/business/page.js",
+  "/eligibility/page": "app/eligibility/page.js",
+  "/_not-found/page": "app/_not-found/page.js",
+  "/contact/page": "app/contact/page.js"
+}

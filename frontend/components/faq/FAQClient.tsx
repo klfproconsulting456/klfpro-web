@@ -1,0 +1,272 @@
+"use client";
+
+import { useState } from "react";
+import { motion, AnimatePresence } from "framer-motion";
+import { ChevronDown, Search } from "lucide-react";
+
+const faqData = [
+  {
+    category: "General Healthcare BPO",
+    questions: [
+      {
+        q: "What Healthcare BPO services does KLFPRO provide?",
+        a: "Our Healthcare division specializes in Medical Billing, Revenue Cycle Management (RCM), Collections & Denial Management, Patient Access Management, Accounts Receivable, and Medical Coding Services."
+      },
+      {
+        q: "How do you ensure HIPAA compliance and data security?",
+        a: "Data security is our top priority. We strictly adhere to HIPAA regulations, employ advanced encryption protocols, secure access controls, and conduct regular security audits to ensure all patient and medical data is fully protected."
+      },
+      {
+        q: "Can KLFPRO integrate with our existing EHR/EMR systems?",
+        a: "Yes, our systems and team are highly adaptable and can seamlessly integrate with most major Electronic Health Record (EHR) and Electronic Medical Record (EMR) software to ensure a smooth workflow."
+      }
+    ]
+  },
+  {
+    category: "Medical Billing & RCM",
+    questions: [
+      {
+        q: "How can KLFPRO improve our cash flow?",
+        a: "By optimizing your Revenue Cycle Management (RCM), we reduce claim denials, accelerate payment posting, and ensure that every claim is processed correctly and on time, thereby significantly improving your cash flow."
+      },
+      {
+        q: "Do you handle Denial Management?",
+        a: "Absolutely. We have a dedicated team for Collections and Denial Management. We identify the root causes of denials, manage the appeals process, and implement strategies to prevent future denials."
+      },
+      {
+        q: "What specialties do you bill for?",
+        a: "We offer multi-specialty billing. Our certified coders and billing experts have experience across various medical specialties, ensuring accurate coding and billing regardless of your practice focus."
+      }
+    ]
+  },
+  {
+    category: "Support & Transition",
+    questions: [
+      {
+        q: "How long does it take to transition our billing to KLFPRO?",
+        a: "The transition period depends on the size and complexity of your practice, but we aim for a seamless onboarding process that typically takes between 2 to 4 weeks with minimal disruption to your daily operations."
+      },
+      {
+        q: "Will we have a dedicated account manager?",
+        a: "Yes, every client is assigned a dedicated account manager who serves as your primary point of contact, providing regular performance reports and addressing any concerns promptly."
+      }
+    ]
+  }
+];
+
+export function FAQClient() {
+  const [activeCategory, setActiveCategory] = useState(faqData[0].category);
+  const [searchQuery, setSearchQuery] = useState("");
+  const [openIndex, setOpenIndex] = useState<number | null>(0); // First item open by default
+
+  const toggleAccordion = (index: number) => {
+    setOpenIndex(openIndex === index ? null : index);
+  };
+
+  const filteredCategories = faqData.map(categoryObj => {
+    return {
+      ...categoryObj,
+      questions: categoryObj.questions.filter(
+        q => 
+          q.q.toLowerCase().includes(searchQuery.toLowerCase()) || 
+          q.a.toLowerCase().includes(searchQuery.toLowerCase())
+      )
+    }
+  }).filter(c => c.questions.length > 0);
+
+  const displayData = searchQuery ? filteredCategories : faqData.filter(c => c.category === activeCategory);
+
+  return (
+    <div className="w-full bg-transparent min-h-screen py-16 lg:py-24">
+      <div className="max-w-[1200px] mx-auto px-6">
+        
+        {/* Header Section */}
+        <div className="text-center mb-16">
+          <motion.div 
+            initial={{ opacity: 0, y: 10 }}
+            animate={{ opacity: 1, y: 0 }}
+            className="flex items-center justify-center gap-3 mb-5"
+          >
+            <div className="w-10 h-[2px] bg-[#D4A937]"></div>
+            <span className="text-[#D4A937] font-bold text-[13px] tracking-[0.15em] uppercase">
+              Help Center
+            </span>
+            <div className="w-10 h-[2px] bg-[#D4A937]"></div>
+          </motion.div>
+          <motion.h1 
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ delay: 0.1 }}
+            className="text-4xl md:text-5xl font-extrabold text-[#1C2233] leading-tight mb-6"
+          >
+            Frequently Asked Questions
+          </motion.h1>
+          <motion.p
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ delay: 0.2 }}
+            className="text-lg text-[#5F6B7A] max-w-2xl mx-auto mb-10"
+          >
+            Find answers to common questions about our financial products and healthcare BPO solutions. If you need further assistance, our support team is always here to help.
+          </motion.p>
+
+          {/* Search Bar */}
+          <motion.div 
+            initial={{ opacity: 0, scale: 0.95 }}
+            animate={{ opacity: 1, scale: 1 }}
+            transition={{ delay: 0.3 }}
+            className="relative max-w-xl mx-auto"
+          >
+            <div className="absolute inset-y-0 left-0 pl-4 flex items-center pointer-events-none">
+              <Search className="h-5 w-5 text-[#5F6B7A]" />
+            </div>
+            <input 
+              type="text" 
+              placeholder="Search for answers..."
+              value={searchQuery}
+              onChange={(e) => setSearchQuery(e.target.value)}
+              className="w-full pl-12 pr-4 py-4 rounded-full border border-gray-200 bg-white shadow-sm focus:outline-none focus:ring-2 focus:ring-[#D4A937]/50 focus:border-[#D4A937] text-[#1C2233] placeholder-[#8A94A6] transition-all"
+            />
+          </motion.div>
+        </div>
+
+        <div className="flex flex-col lg:flex-row gap-12">
+          {/* Sidebar / Tabs */}
+          {!searchQuery && (
+            <div className="w-full lg:w-[300px] flex-shrink-0">
+              <div className="sticky top-24 flex flex-col gap-2">
+                {faqData.map((cat, idx) => (
+                  <button
+                    key={idx}
+                    onClick={() => {
+                      setActiveCategory(cat.category);
+                      setOpenIndex(0);
+                    }}
+                    className={`text-left px-6 py-4 rounded-xl font-bold transition-all duration-300 ${
+                      activeCategory === cat.category 
+                        ? "bg-[#1C2233] text-white shadow-lg scale-[1.02]" 
+                        : "bg-white text-[#5F6B7A] hover:bg-gray-50 border border-gray-100 hover:text-[#1C2233]"
+                    }`}
+                  >
+                    {cat.category}
+                  </button>
+                ))}
+              </div>
+            </div>
+          )}
+
+          {/* Accordion Content */}
+          <div className="flex-1">
+            <div className="flex flex-col gap-4">
+              {displayData.map((cat, catIndex) => (
+                <div key={catIndex}>
+                  {searchQuery && (
+                    <h2 className="text-xl font-bold text-[#1C2233] mb-4 mt-6 border-b pb-2">{cat.category}</h2>
+                  )}
+                  <div className="flex flex-col gap-4">
+                    {cat.questions.map((item, idx) => {
+                      const absoluteIndex = catIndex * 100 + idx; // unique index for flat list
+                      const isOpen = openIndex === absoluteIndex;
+
+                      return (
+                        <motion.div 
+                          initial={{ opacity: 0, y: 10 }}
+                          animate={{ opacity: 1, y: 0 }}
+                          key={absoluteIndex}
+                          className={`bg-white rounded-2xl border transition-all duration-300 overflow-hidden ${
+                            isOpen ? "border-[#D4A937] shadow-md" : "border-gray-200 hover:border-[#D4A937]/50"
+                          }`}
+                        >
+                          <button
+                            onClick={() => toggleAccordion(absoluteIndex)}
+                            className="w-full flex items-center justify-between px-6 py-5 text-left focus:outline-none"
+                          >
+                            <span className={`font-semibold text-lg pr-8 ${isOpen ? "text-[#D4A937]" : "text-[#1C2233]"}`}>
+                              {item.q}
+                            </span>
+                            <div className={`flex-shrink-0 w-8 h-8 rounded-full flex items-center justify-center transition-colors duration-300 ${isOpen ? "bg-[#D4A937] text-white" : "bg-gray-100 text-[#5F6B7A]"}`}>
+                              <ChevronDown className={`w-5 h-5 transition-transform duration-300 ${isOpen ? "rotate-180" : ""}`} />
+                            </div>
+                          </button>
+                          <AnimatePresence>
+                            {isOpen && (
+                              <motion.div
+                                initial={{ height: 0, opacity: 0 }}
+                                animate={{ height: "auto", opacity: 1 }}
+                                exit={{ height: 0, opacity: 0 }}
+                                transition={{ duration: 0.3, ease: "easeInOut" }}
+                              >
+                                <div className="px-6 pb-6 text-[#5F6B7A] leading-relaxed border-t border-gray-100 pt-4">
+                                  {item.a}
+                                </div>
+                              </motion.div>
+                            )}
+                          </AnimatePresence>
+                        </motion.div>
+                      );
+                    })}
+                  </div>
+                </div>
+              ))}
+              
+              {displayData.length === 0 && (
+                <div className="text-center py-12 bg-white rounded-2xl border border-dashed border-gray-300">
+                  <p className="text-lg text-[#5F6B7A]">No frequently asked questions found matching your search.</p>
+                  <button 
+                    onClick={() => setSearchQuery("")}
+                    className="mt-4 text-[#D4A937] font-semibold hover:underline"
+                  >
+                    Clear Search
+                  </button>
+                </div>
+              )}
+
+              {/* Ask a Question Form */}
+              <motion.div 
+                initial={{ opacity: 0, y: 20 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ delay: 0.4 }}
+                className="mt-12 bg-white/90 backdrop-blur-md rounded-2xl border border-gray-200 p-8 shadow-sm relative overflow-hidden"
+              >
+                <div className="absolute top-0 left-0 w-1 h-full bg-[#D4A937]"></div>
+                <h3 className="text-2xl font-bold text-[#1C2233] mb-2">Still have questions?</h3>
+                <p className="text-[#5F6B7A] mb-6">Can't find what you're looking for? Submit your question below and our team will get back to you shortly.</p>
+                <form className="flex flex-col gap-5" onSubmit={(e) => { e.preventDefault(); alert("Question submitted successfully! Our team will reply from the admin panel soon."); }}>
+                  <div className="flex flex-col md:flex-row gap-5">
+                    <input 
+                      type="text" 
+                      placeholder="Your Name *" 
+                      required
+                      className="w-full px-4 py-3 rounded-xl border border-gray-200 bg-white focus:outline-none focus:ring-2 focus:ring-[#D4A937]/50 focus:border-[#D4A937] transition-all"
+                    />
+                    <input 
+                      type="email" 
+                      placeholder="Your Email *" 
+                      required
+                      className="w-full px-4 py-3 rounded-xl border border-gray-200 bg-white focus:outline-none focus:ring-2 focus:ring-[#D4A937]/50 focus:border-[#D4A937] transition-all"
+                    />
+                  </div>
+                  <textarea 
+                    placeholder="Type your question here... *" 
+                    rows={4}
+                    required
+                    className="w-full px-4 py-3 rounded-xl border border-gray-200 bg-white focus:outline-none focus:ring-2 focus:ring-[#D4A937]/50 focus:border-[#D4A937] transition-all resize-none"
+                  />
+                  <button 
+                    type="submit" 
+                    className="self-start inline-flex items-center justify-center gap-2 rounded-full bg-[#1C2233] px-8 py-3 text-sm font-semibold text-white shadow-sm transition-all duration-300 hover:bg-[#D4A937] hover:shadow-lg hover:-translate-y-0.5"
+                  >
+                    Submit Question
+                    <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" strokeWidth="2.5" stroke="currentColor">
+                      <path strokeLinecap="round" strokeLinejoin="round" d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3" />
+                    </svg>
+                  </button>
+                </form>
+              </motion.div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  );
+}

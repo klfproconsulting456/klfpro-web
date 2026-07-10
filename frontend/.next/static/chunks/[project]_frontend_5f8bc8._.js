@@ -1651,7 +1651,7 @@ function CalculatorWrapper() {
             <div id="calcDashboard" class="calc-view calc-dashboard active">
                 <div class="calc-header">
                     <h2 class="calc-title" style="text-align:center;">Dashboard</h2>
-                    <button class="calc-close-btn" id="calcCloseBtn">&times;</button>
+                    <button class="calc-close-btn" id="calcCloseBtn" onclick="CalculatorHub.closeHub()">&times;</button>
                 </div>
                 <div class="calc-content">
                     

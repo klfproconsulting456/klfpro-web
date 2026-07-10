@@ -1,4 +1,6 @@
 {
   "/klfpro-healthcare/page": "app/klfpro-healthcare/page.js",
-  "/klfpro-healthcare/services/[slug]/page": "app/klfpro-healthcare/services/[slug]/page.js"
+  "/klfpro-healthcare/services/[slug]/page": "app/klfpro-healthcare/services/[slug]/page.js",
+  "/page": "app/page.js",
+  "/emi-calculator/page": "app/emi-calculator/page.js"
 }

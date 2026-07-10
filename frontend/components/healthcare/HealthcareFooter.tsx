@@ -35,7 +35,9 @@ export function HealthcareFooter() {
             <div className="mt-5 flex items-center gap-3">
               {/* LinkedIn */}
               <a
-                href="#"
+                href="https://www.linkedin.com/company/142878527/admin/?lipi=urn%3Ali%3Apage%3Ad_flagship3_feed%3BvfFwSIv4T1OUZ9UyUieiMg%3D%3D"
+                target="_blank"
+                rel="noreferrer"
                 className="flex h-8 w-8 items-center justify-center rounded-full bg-[#0A66C2] text-white transition-transform duration-200 hover:-translate-y-1"
                 aria-label="LinkedIn"
               >

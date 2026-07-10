@@ -190,11 +190,7 @@ export function HealthcareWhyChoose() {
                   </p>
                 </div>
 
-                {/* Right: Gold Arrow */}
-                <div className="flex-shrink-0 flex items-center justify-center w-8 h-8 rounded-full opacity-60 transition-all duration-300 group-hover:opacity-100 group-hover:translate-x-1">
-                  <ArrowRight className="w-5 h-5 text-[#D4A937]" />
-                </div>
-              </motion.div>
+                </motion.div>
             ))}
           </div>
         </div>

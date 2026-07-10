@@ -59,9 +59,9 @@ export function ServiceOfferings({ offerings }: ServiceOfferingsProps) {
                 </div>
                 
                 <div className="mt-auto w-full pt-4">
-                  <div className="inline-flex w-full items-center justify-center bg-[#D4A937] text-white border border-[#D4A937] px-4 py-3.5 rounded-full text-[14px] sm:text-[15px] font-bold group-hover:bg-white group-hover:text-[#D4A937] transition-all duration-300 shadow-sm">
+                  <h3 className="text-center text-[16px] sm:text-[17px] font-extrabold text-[#1C2233] group-hover:text-[#D4A937] transition-colors duration-300">
                     {offering.text}
-                  </div>
+                  </h3>
                 </div>
               </div>
             </motion.div>

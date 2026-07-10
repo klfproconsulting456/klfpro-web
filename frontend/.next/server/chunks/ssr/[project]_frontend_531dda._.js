@@ -1128,7 +1128,7 @@ function HealthcareFooter() {
                                         columnNumber: 13
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$future$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
-                                        className: "mt-3 max-w-xs lg:max-w-sm text-[12px] lg:text-[14px] leading-[1.6] lg:leading-[24px] text-white/60",
+                                        className: "mt-6 max-w-xs lg:max-w-sm text-[12px] lg:text-[14px] leading-[1.6] lg:leading-[24px] text-white/60",
                                         children: "We are a premium healthcare business solutions provider, dedicated to delivering enterprise-grade operational excellence and world-class support services to our global partners."
                                     }, void 0, false, {
                                         fileName: "[project]/frontend/components/healthcare/HealthcareFooter.tsx",
@@ -1139,7 +1139,9 @@ function HealthcareFooter() {
                                         className: "mt-5 flex items-center gap-3",
                                         children: [
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$future$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("a", {
-                                                href: "#",
+                                                href: "https://www.linkedin.com/company/142878527/admin/?lipi=urn%3Ali%3Apage%3Ad_flagship3_feed%3BvfFwSIv4T1OUZ9UyUieiMg%3D%3D",
+                                                target: "_blank",
+                                                rel: "noreferrer",
                                                 className: "flex h-8 w-8 items-center justify-center rounded-full bg-[#0A66C2] text-white transition-transform duration-200 hover:-translate-y-1",
                                                 "aria-label": "LinkedIn",
                                                 children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$future$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("svg", {
@@ -1150,12 +1152,12 @@ function HealthcareFooter() {
                                                         d: "M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"
                                                     }, void 0, false, {
                                                         fileName: "[project]/frontend/components/healthcare/HealthcareFooter.tsx",
-                                                        lineNumber: 43,
+                                                        lineNumber: 45,
                                                         columnNumber: 19
                                                     }, this)
                                                 }, void 0, false, {
                                                     fileName: "[project]/frontend/components/healthcare/HealthcareFooter.tsx",
-                                                    lineNumber: 42,
+                                                    lineNumber: 44,
                                                     columnNumber: 17
                                                 }, this)
                                             }, void 0, false, {
@@ -1177,17 +1179,17 @@ function HealthcareFooter() {
                                                         d: "M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"
                                                     }, void 0, false, {
                                                         fileName: "[project]/frontend/components/healthcare/HealthcareFooter.tsx",
-                                                        lineNumber: 55,
+                                                        lineNumber: 57,
                                                         columnNumber: 19
                                                     }, this)
                                                 }, void 0, false, {
                                                     fileName: "[project]/frontend/components/healthcare/HealthcareFooter.tsx",
-                                                    lineNumber: 54,
+                                                    lineNumber: 56,
                                                     columnNumber: 17
                                                 }, this)
                                             }, void 0, false, {
                                                 fileName: "[project]/frontend/components/healthcare/HealthcareFooter.tsx",
-                                                lineNumber: 47,
+                                                lineNumber: 49,
                                                 columnNumber: 15
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$future$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("a", {
@@ -1204,17 +1206,17 @@ function HealthcareFooter() {
                                                         d: "M22 12c0-5.523-4.477-10-10-10S2 6.477 2 12c0 4.991 3.657 9.128 8.438 9.878v-6.987h-2.54V12h2.54V9.797c0-2.506 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.771-1.63 1.562V12h2.773l-.443 2.89h-2.33v6.988C18.343 21.128 22 16.991 22 12z"
                                                     }, void 0, false, {
                                                         fileName: "[project]/frontend/components/healthcare/HealthcareFooter.tsx",
-                                                        lineNumber: 67,
+                                                        lineNumber: 69,
                                                         columnNumber: 19
                                                     }, this)
                                                 }, void 0, false, {
                                                     fileName: "[project]/frontend/components/healthcare/HealthcareFooter.tsx",
-                                                    lineNumber: 66,
+                                                    lineNumber: 68,
                                                     columnNumber: 17
                                                 }, this)
                                             }, void 0, false, {
                                                 fileName: "[project]/frontend/components/healthcare/HealthcareFooter.tsx",
-                                                lineNumber: 59,
+                                                lineNumber: 61,
                                                 columnNumber: 15
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$future$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("a", {
@@ -1231,17 +1233,17 @@ function HealthcareFooter() {
                                                         d: "M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"
                                                     }, void 0, false, {
                                                         fileName: "[project]/frontend/components/healthcare/HealthcareFooter.tsx",
-                                                        lineNumber: 79,
+                                                        lineNumber: 81,
                                                         columnNumber: 19
                                                     }, this)
                                                 }, void 0, false, {
                                                     fileName: "[project]/frontend/components/healthcare/HealthcareFooter.tsx",
-                                                    lineNumber: 78,
+                                                    lineNumber: 80,
                                                     columnNumber: 17
                                                 }, this)
                                             }, void 0, false, {
                                                 fileName: "[project]/frontend/components/healthcare/HealthcareFooter.tsx",
-                                                lineNumber: 71,
+                                                lineNumber: 73,
                                                 columnNumber: 15
                                             }, this)
                                         ]
@@ -1257,12 +1259,12 @@ function HealthcareFooter() {
                                             children: "CIN: U70200HR2025PTC138274"
                                         }, void 0, false, {
                                             fileName: "[project]/frontend/components/healthcare/HealthcareFooter.tsx",
-                                            lineNumber: 86,
+                                            lineNumber: 88,
                                             columnNumber: 15
                                         }, this)
                                     }, void 0, false, {
                                         fileName: "[project]/frontend/components/healthcare/HealthcareFooter.tsx",
-                                        lineNumber: 85,
+                                        lineNumber: 87,
                                         columnNumber: 13
                                     }, this)
                                 ]
@@ -1278,7 +1280,7 @@ function HealthcareFooter() {
                                         children: "Quick Links"
                                     }, void 0, false, {
                                         fileName: "[project]/frontend/components/healthcare/HealthcareFooter.tsx",
-                                        lineNumber: 94,
+                                        lineNumber: 96,
                                         columnNumber: 13
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$future$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("ul", {
@@ -1294,19 +1296,19 @@ function HealthcareFooter() {
                                                             children: ">"
                                                         }, void 0, false, {
                                                             fileName: "[project]/frontend/components/healthcare/HealthcareFooter.tsx",
-                                                            lineNumber: 103,
+                                                            lineNumber: 105,
                                                             columnNumber: 19
                                                         }, this),
                                                         "Our Services"
                                                     ]
                                                 }, void 0, true, {
                                                     fileName: "[project]/frontend/components/healthcare/HealthcareFooter.tsx",
-                                                    lineNumber: 99,
+                                                    lineNumber: 101,
                                                     columnNumber: 17
                                                 }, this)
                                             }, void 0, false, {
                                                 fileName: "[project]/frontend/components/healthcare/HealthcareFooter.tsx",
-                                                lineNumber: 98,
+                                                lineNumber: 100,
                                                 columnNumber: 15
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$future$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("li", {
@@ -1319,19 +1321,19 @@ function HealthcareFooter() {
                                                             children: ">"
                                                         }, void 0, false, {
                                                             fileName: "[project]/frontend/components/healthcare/HealthcareFooter.tsx",
-                                                            lineNumber: 111,
+                                                            lineNumber: 113,
                                                             columnNumber: 19
                                                         }, this),
                                                         "About Us"
                                                     ]
                                                 }, void 0, true, {
                                                     fileName: "[project]/frontend/components/healthcare/HealthcareFooter.tsx",
-                                                    lineNumber: 107,
+                                                    lineNumber: 109,
                                                     columnNumber: 17
                                                 }, this)
                                             }, void 0, false, {
                                                 fileName: "[project]/frontend/components/healthcare/HealthcareFooter.tsx",
-                                                lineNumber: 106,
+                                                lineNumber: 108,
                                                 columnNumber: 15
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$future$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("li", {
@@ -1344,19 +1346,19 @@ function HealthcareFooter() {
                                                             children: ">"
                                                         }, void 0, false, {
                                                             fileName: "[project]/frontend/components/healthcare/HealthcareFooter.tsx",
-                                                            lineNumber: 119,
+                                                            lineNumber: 121,
                                                             columnNumber: 19
                                                         }, this),
                                                         "Careers"
                                                     ]
                                                 }, void 0, true, {
                                                     fileName: "[project]/frontend/components/healthcare/HealthcareFooter.tsx",
-                                                    lineNumber: 115,
+                                                    lineNumber: 117,
                                                     columnNumber: 17
                                                 }, this)
                                             }, void 0, false, {
                                                 fileName: "[project]/frontend/components/healthcare/HealthcareFooter.tsx",
-                                                lineNumber: 114,
+                                                lineNumber: 116,
                                                 columnNumber: 15
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$future$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("li", {
@@ -1369,19 +1371,19 @@ function HealthcareFooter() {
                                                             children: ">"
                                                         }, void 0, false, {
                                                             fileName: "[project]/frontend/components/healthcare/HealthcareFooter.tsx",
-                                                            lineNumber: 127,
+                                                            lineNumber: 129,
                                                             columnNumber: 19
                                                         }, this),
                                                         "Contact"
                                                     ]
                                                 }, void 0, true, {
                                                     fileName: "[project]/frontend/components/healthcare/HealthcareFooter.tsx",
-                                                    lineNumber: 123,
+                                                    lineNumber: 125,
                                                     columnNumber: 17
                                                 }, this)
                                             }, void 0, false, {
                                                 fileName: "[project]/frontend/components/healthcare/HealthcareFooter.tsx",
-                                                lineNumber: 122,
+                                                lineNumber: 124,
                                                 columnNumber: 15
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$future$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("li", {
@@ -1396,31 +1398,31 @@ function HealthcareFooter() {
                                                             children: ">"
                                                         }, void 0, false, {
                                                             fileName: "[project]/frontend/components/healthcare/HealthcareFooter.tsx",
-                                                            lineNumber: 137,
+                                                            lineNumber: 139,
                                                             columnNumber: 19
                                                         }, this),
                                                         "Location"
                                                     ]
                                                 }, void 0, true, {
                                                     fileName: "[project]/frontend/components/healthcare/HealthcareFooter.tsx",
-                                                    lineNumber: 131,
+                                                    lineNumber: 133,
                                                     columnNumber: 17
                                                 }, this)
                                             }, void 0, false, {
                                                 fileName: "[project]/frontend/components/healthcare/HealthcareFooter.tsx",
-                                                lineNumber: 130,
+                                                lineNumber: 132,
                                                 columnNumber: 15
                                             }, this)
                                         ]
                                     }, void 0, true, {
                                         fileName: "[project]/frontend/components/healthcare/HealthcareFooter.tsx",
-                                        lineNumber: 97,
+                                        lineNumber: 99,
                                         columnNumber: 13
                                     }, this)
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/frontend/components/healthcare/HealthcareFooter.tsx",
-                                lineNumber: 93,
+                                lineNumber: 95,
                                 columnNumber: 11
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$future$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1430,7 +1432,7 @@ function HealthcareFooter() {
                                         children: "Contact Us"
                                     }, void 0, false, {
                                         fileName: "[project]/frontend/components/healthcare/HealthcareFooter.tsx",
-                                        lineNumber: 145,
+                                        lineNumber: 147,
                                         columnNumber: 13
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$future$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1441,21 +1443,21 @@ function HealthcareFooter() {
                                                 children: "Corporate Office"
                                             }, void 0, false, {
                                                 fileName: "[project]/frontend/components/healthcare/HealthcareFooter.tsx",
-                                                lineNumber: 149,
+                                                lineNumber: 151,
                                                 columnNumber: 15
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$future$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
                                                 children: "OFFICE NO.1142, TOWER B3, SPAZE I-TECH PARK"
                                             }, void 0, false, {
                                                 fileName: "[project]/frontend/components/healthcare/HealthcareFooter.tsx",
-                                                lineNumber: 150,
+                                                lineNumber: 152,
                                                 columnNumber: 15
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$future$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
                                                 children: "GURUGRAM, HARYANA"
                                             }, void 0, false, {
                                                 fileName: "[project]/frontend/components/healthcare/HealthcareFooter.tsx",
-                                                lineNumber: 151,
+                                                lineNumber: 153,
                                                 columnNumber: 15
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$future$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1468,7 +1470,7 @@ function HealthcareFooter() {
                                                                 children: "Phone:"
                                                             }, void 0, false, {
                                                                 fileName: "[project]/frontend/components/healthcare/HealthcareFooter.tsx",
-                                                                lineNumber: 155,
+                                                                lineNumber: 157,
                                                                 columnNumber: 19
                                                             }, this),
                                                             " ",
@@ -1476,7 +1478,7 @@ function HealthcareFooter() {
                                                         ]
                                                     }, void 0, true, {
                                                         fileName: "[project]/frontend/components/healthcare/HealthcareFooter.tsx",
-                                                        lineNumber: 154,
+                                                        lineNumber: 156,
                                                         columnNumber: 17
                                                     }, this),
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$future$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -1486,7 +1488,7 @@ function HealthcareFooter() {
                                                                 children: "Email:"
                                                             }, void 0, false, {
                                                                 fileName: "[project]/frontend/components/healthcare/HealthcareFooter.tsx",
-                                                                lineNumber: 159,
+                                                                lineNumber: 161,
                                                                 columnNumber: 19
                                                             }, this),
                                                             " ",
@@ -1494,25 +1496,25 @@ function HealthcareFooter() {
                                                         ]
                                                     }, void 0, true, {
                                                         fileName: "[project]/frontend/components/healthcare/HealthcareFooter.tsx",
-                                                        lineNumber: 158,
+                                                        lineNumber: 160,
                                                         columnNumber: 17
                                                     }, this)
                                                 ]
                                             }, void 0, true, {
                                                 fileName: "[project]/frontend/components/healthcare/HealthcareFooter.tsx",
-                                                lineNumber: 153,
+                                                lineNumber: 155,
                                                 columnNumber: 15
                                             }, this)
                                         ]
                                     }, void 0, true, {
                                         fileName: "[project]/frontend/components/healthcare/HealthcareFooter.tsx",
-                                        lineNumber: 148,
+                                        lineNumber: 150,
                                         columnNumber: 13
                                     }, this)
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/frontend/components/healthcare/HealthcareFooter.tsx",
-                                lineNumber: 144,
+                                lineNumber: 146,
                                 columnNumber: 11
                             }, this)
                         ]
@@ -1529,7 +1531,7 @@ function HealthcareFooter() {
                                 children: "© 2026 KLFPRO Healthcare. All rights reserved."
                             }, void 0, false, {
                                 fileName: "[project]/frontend/components/healthcare/HealthcareFooter.tsx",
-                                lineNumber: 169,
+                                lineNumber: 171,
                                 columnNumber: 11
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$future$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1541,7 +1543,7 @@ function HealthcareFooter() {
                                         children: "Privacy Policy"
                                     }, void 0, false, {
                                         fileName: "[project]/frontend/components/healthcare/HealthcareFooter.tsx",
-                                        lineNumber: 174,
+                                        lineNumber: 176,
                                         columnNumber: 13
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$future$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
@@ -1549,7 +1551,7 @@ function HealthcareFooter() {
                                         children: "|"
                                     }, void 0, false, {
                                         fileName: "[project]/frontend/components/healthcare/HealthcareFooter.tsx",
-                                        lineNumber: 180,
+                                        lineNumber: 182,
                                         columnNumber: 13
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$future$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$link$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"], {
@@ -1558,19 +1560,19 @@ function HealthcareFooter() {
                                         children: "Terms & Conditions"
                                     }, void 0, false, {
                                         fileName: "[project]/frontend/components/healthcare/HealthcareFooter.tsx",
-                                        lineNumber: 181,
+                                        lineNumber: 183,
                                         columnNumber: 13
                                     }, this)
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/frontend/components/healthcare/HealthcareFooter.tsx",
-                                lineNumber: 173,
+                                lineNumber: 175,
                                 columnNumber: 11
                             }, this)
                         ]
                     }, void 0, true, {
                         fileName: "[project]/frontend/components/healthcare/HealthcareFooter.tsx",
-                        lineNumber: 168,
+                        lineNumber: 170,
                         columnNumber: 9
                     }, this)
                 ]
@@ -1584,7 +1586,7 @@ function HealthcareFooter() {
                 onClose: ()=>setIsContactModalOpen(false)
             }, void 0, false, {
                 fileName: "[project]/frontend/components/healthcare/HealthcareFooter.tsx",
-                lineNumber: 190,
+                lineNumber: 192,
                 columnNumber: 7
             }, this)
         ]

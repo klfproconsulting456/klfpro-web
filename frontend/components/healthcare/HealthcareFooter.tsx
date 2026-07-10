@@ -25,7 +25,7 @@ export function HealthcareFooter() {
               </span>
             </Link>
 
-            <p className="mt-3 max-w-xs lg:max-w-sm text-[12px] lg:text-[14px] leading-[1.6] lg:leading-[24px] text-white/60">
+            <p className="mt-6 max-w-xs lg:max-w-sm text-[12px] lg:text-[14px] leading-[1.6] lg:leading-[24px] text-white/60">
               We are a premium healthcare business solutions provider, dedicated
               to delivering enterprise-grade operational excellence and world-class
               support services to our global partners.

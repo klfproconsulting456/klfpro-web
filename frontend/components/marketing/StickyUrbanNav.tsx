@@ -284,7 +284,7 @@ export function StickyUrbanNav({ lightSentinelRef, partnerHref = "/contact" }: S
         initial={false}
       >
         <div className="pointer-events-none absolute inset-0 bg-[linear-gradient(90deg,rgba(212,175,55,0.04)_0%,transparent_22%,transparent_78%,rgba(153,27,51,0.04)_100%)] opacity-90" aria-hidden />
-        <div className="relative mx-auto flex h-[72px] max-w-[1170px] items-center justify-between gap-3 px-5 md:gap-4 md:px-6">
+        <div className="relative mx-auto flex h-[72px] max-w-[1440px] items-center justify-between gap-3 px-5 md:gap-4 md:px-6">
           <KlfproLogo showConsulting size="compact" wordmarkClassName="text-[#0A1128]" />
 
           <nav className="hidden items-center gap-2 text-[14px] font-medium md:flex">

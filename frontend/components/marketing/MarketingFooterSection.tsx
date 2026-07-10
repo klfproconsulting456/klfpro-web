@@ -32,10 +32,10 @@ export function MarketingFooterSection() {
       transition={{ duration: 0.55, ease: [0.22, 1, 0.36, 1] }}
       className="border-t border-white/10 bg-[#081428] text-white shadow-[0_-24px_80px_-40px_rgba(0,0,0,0.5)]"
     >
-      <div className="mx-auto grid max-w-[1170px] gap-6 px-5 py-8 md:grid-cols-[1.8fr_1fr_1fr] md:px-6">
+      <div className="mx-auto grid grid-cols-1 max-w-[1170px] gap-10 px-5 py-10 md:grid-cols-[1.8fr_1fr_1fr] md:px-6">
         <div>
-          <div className="flex items-center gap-3">
-            <Image src="/klfpro-mark.png" alt="KLFPRO mark" width={48} height={48} className="h-[48px] w-[48px] scale-[1.7]" />
+          <div className="flex items-center gap-3 group">
+            <img src="/healthcare-logo.png" alt="KLFPRO mark" className="h-[40px] w-auto object-contain transition-transform duration-300 group-hover:scale-105" />
             <span className="text-[24px] font-semibold leading-none tracking-tight text-white">klfpro consulting</span>
           </div>
           <p className="mt-4 max-w-[430px] text-[13px] leading-[1.8] text-white/60">

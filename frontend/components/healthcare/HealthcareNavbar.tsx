@@ -30,15 +30,11 @@ export function HealthcareNavbar() {
                 href="/"
                 className="flex items-center gap-2.5 group"
               >
-                <div className="flex h-8 w-8 lg:h-[36px] lg:w-[36px] items-center justify-center rounded-lg bg-[#D4A937] shadow-sm transition-transform group-hover:scale-105">
-                  <svg
-                    className="w-4 h-4 text-white"
-                    fill="currentColor"
-                    viewBox="0 0 24 24"
-                  >
-                    <path d="M19 10.5h-5.5V5a1 1 0 0 0-1-1h-1a1 1 0 0 0-1 1v5.5H5a1 1 0 0 0-1 1v1a1 1 0 0 0 1 1h5.5V19a1 1 0 0 0 1 1h1a1 1 0 0 0 1-1v-5.5H19a1 1 0 0 0 1-1v-1a1 1 0 0 0-1-1z" />
-                  </svg>
-                </div>
+                <img 
+                  src="/healthcare-logo.png" 
+                  alt="KLFPRO Healthcare Logo" 
+                  className="h-8 lg:h-[40px] w-auto object-contain transition-transform group-hover:scale-105" 
+                />
                 <span className="text-[14px] lg:text-[15px] font-bold tracking-tight text-[#1C2233]">
                   KLFPRO{" "}
                   <span className="font-semibold text-[#D4A937]">
@@ -163,15 +159,11 @@ export function HealthcareNavbar() {
                   className="flex items-center gap-2"
                   onClick={() => setMobileMenuOpen(false)}
                 >
-                  <div className="flex h-9 w-9 items-center justify-center rounded-lg bg-[#D4A937]">
-                    <svg
-                      className="w-5 h-5 text-white"
-                      fill="currentColor"
-                      viewBox="0 0 24 24"
-                    >
-                      <path d="M19 10.5h-5.5V5a1 1 0 0 0-1-1h-1a1 1 0 0 0-1 1v5.5H5a1 1 0 0 0-1 1v1a1 1 0 0 0 1 1h5.5V19a1 1 0 0 0 1 1h1a1 1 0 0 0 1-1v-5.5H19a1 1 0 0 0 1-1v-1a1 1 0 0 0-1-1z" />
-                    </svg>
-                  </div>
+                  <img 
+                    src="/healthcare-logo.png" 
+                    alt="KLFPRO Healthcare Logo" 
+                    className="h-8 w-auto object-contain" 
+                  />
                   <span className="text-base font-bold text-[#1C2233]">
                     KLFPRO{" "}
                     <span className="text-[#D4A937]">Healthcare</span>

@@ -44,12 +44,12 @@ export function ContactModal({ isOpen, onClose }: ContactModalProps) {
               animate={{ opacity: 1, scale: 1, y: 0 }}
               exit={{ opacity: 0, scale: 0.95, y: 20 }}
               transition={{ type: "spring", damping: 25, stiffness: 300 }}
-              className="w-full max-w-4xl pointer-events-auto"
+              className="w-full max-w-4xl max-h-[90vh] overflow-y-auto pointer-events-auto rounded-2xl shadow-2xl shadow-[#1C2233]/20"
             >
-              <div className="relative overflow-hidden rounded-2xl bg-white shadow-2xl shadow-[#1C2233]/20 border border-[#F3E0C0] flex flex-col lg:flex-row">
+              <div className="relative w-full min-h-full bg-white border border-[#F3E0C0] flex flex-col lg:flex-row">
                 
                 {/* Left Side - Contact Info */}
-                <div className="w-full lg:w-[45%] bg-[#FCF8F2] p-8 sm:p-10 relative overflow-hidden">
+                <div className="w-full lg:w-[45%] bg-[#FCF8F2] p-6 sm:p-8 lg:p-10 relative overflow-hidden shrink-0">
                   <div className="absolute top-0 left-0 w-full h-full opacity-[0.03] pointer-events-none" style={{ backgroundImage: "radial-gradient(circle at 1px 1px, rgba(8,20,40,0.5) 1px, transparent 0)", backgroundSize: "24px 24px" }} />
                   
                   <div className="relative z-10">
@@ -65,7 +65,7 @@ export function ContactModal({ isOpen, onClose }: ContactModalProps) {
                         <h4 className="text-[13px] font-bold text-[#1C2233] uppercase tracking-wider mb-1 flex items-center gap-2">
                           <span>📧</span> Email Us
                         </h4>
-                        <a href="mailto:info@klfpro.in" className="text-[15px] font-medium text-[#D4A937] hover:underline">info@klfpro.in</a>
+                        <a href="mailto:info@klfprohealthcare.com" className="text-[15px] font-medium text-[#D4A937] hover:underline break-words">info@klfprohealthcare.com</a>
                       </div>
                       
                       <div>
@@ -79,7 +79,7 @@ export function ContactModal({ isOpen, onClose }: ContactModalProps) {
                         <h4 className="text-[13px] font-bold text-[#1C2233] uppercase tracking-wider mb-1 flex items-center gap-2">
                           <span>💼</span> Careers
                         </h4>
-                        <a href="mailto:careers@klfpro.com" className="text-[15px] font-medium text-[#5F6B7A] hover:text-[#1C2233]">careers@klfpro.com</a>
+                        <a href="mailto:hr@klfpro.in" className="text-[15px] font-medium text-[#5F6B7A] hover:text-[#1C2233]">hr@klfpro.in</a>
                       </div>
 
                       <div>
@@ -97,7 +97,7 @@ export function ContactModal({ isOpen, onClose }: ContactModalProps) {
                 </div>
 
                 {/* Right Side - Form */}
-                <div className="w-full lg:w-[55%] p-8 sm:p-10 relative">
+                <div className="w-full lg:w-[55%] p-6 sm:p-8 lg:p-10 relative shrink-0">
                   <button
                     onClick={onClose}
                     className="absolute right-4 top-4 rounded-full p-2 text-[#5F6B7A] transition-colors hover:bg-[#FCF8F2] hover:text-[#1C2233]"

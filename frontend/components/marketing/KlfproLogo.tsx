@@ -24,8 +24,8 @@ export function KlfproLogo({
 }: KlfproLogoProps) {
   const markClass =
     size === "compact"
-      ? "h-8 w-8 md:h-10 md:w-10"
-      : "h-10 w-10 md:h-12 md:w-12";
+      ? "h-8 md:h-10 w-auto"
+      : "h-10 md:h-12 w-auto";
 
   const wordClass =
     size === "compact"
@@ -34,23 +34,25 @@ export function KlfproLogo({
 
   const inner = (
     <>
-      <span className={`relative shrink-0 ${markClass}`}>
-        <Image
-          src={MARK_SRC}
-          alt=""
-          fill
-          priority
-          className="object-contain scale-[1.5] drop-shadow-[0_5px_10px_rgba(0,0,0,0.22)]"
-          sizes="48px"
+      <span className={`relative shrink-0 flex items-center ${markClass}`}>
+        <img
+          src="/healthcare-logo.png"
+          alt="KLFPRO Logo"
+          className="h-full w-auto object-contain transition-transform duration-300 group-hover:scale-105"
         />
       </span>
       <span className={`select-none ${wordClass} ${wordmarkClassName}`}>
-        klfpro{showConsulting ? " consulting" : ""}
+        KLFPRO{" "}
+        {showConsulting && (
+          <span className="font-semibold text-[#D4A937]">
+            Consulting
+          </span>
+        )}
       </span>
     </>
   );
 
-  const row = `flex items-center gap-2 ${className ?? ""}`;
+  const row = `flex items-center gap-2 group ${className ?? ""}`;
 
   if (asLink) {
     return (

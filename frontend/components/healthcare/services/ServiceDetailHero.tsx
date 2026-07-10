@@ -1,9 +1,10 @@
 "use client";
 
+import { useState } from "react";
 import { motion } from "framer-motion";
-import Link from "next/link";
-import { ChevronRight, ArrowRight } from "lucide-react";
+import { ArrowRight } from "lucide-react";
 import Image from "next/image";
+import { ContactModal } from "../ContactModal";
 
 interface ServiceDetailHeroProps {
   title: string;
@@ -13,7 +14,10 @@ interface ServiceDetailHeroProps {
 }
 
   export function ServiceDetailHero({ title, heading, description, heroImage = "/images/service-billing-hero.jpg" }: ServiceDetailHeroProps) {
+    const [isModalOpen, setIsModalOpen] = useState(false);
+
     return (
+      <>
       <section className="relative w-full min-h-[450px] lg:min-h-[550px] flex flex-col justify-center overflow-hidden bg-[#FAFAFA]">
         
         {/* Background Image - Centered to show more of the subject */}
@@ -69,13 +73,16 @@ interface ServiceDetailHeroProps {
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.3 }}
           >
-            <Link href="/contact" className="inline-flex items-center justify-center gap-2 bg-[#1C2233] text-white px-8 h-[48px] rounded-full text-[15px] font-medium hover:bg-[#D4A937] transition-all duration-300 group shadow-[0_12px_30px_rgba(8,20,40,0.15)] hover:-translate-y-0.5">
+            <button onClick={() => setIsModalOpen(true)} className="inline-flex items-center justify-center gap-2 bg-[#1C2233] text-white px-8 h-[48px] rounded-full text-[15px] font-medium hover:bg-[#D4A937] transition-all duration-300 group shadow-[0_12px_30px_rgba(8,20,40,0.15)] hover:-translate-y-0.5">
               Talk to an Expert
               <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
-            </Link>
+            </button>
           </motion.div>
         </div>
       </div>
     </section>
+    
+    <ContactModal isOpen={isModalOpen} onClose={() => setIsModalOpen(false)} />
+    </>
   );
 }

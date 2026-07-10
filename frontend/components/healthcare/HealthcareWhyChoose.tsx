@@ -207,7 +207,7 @@ export function HealthcareWhyChoose() {
           transition={{ duration: 0.6, delay: 0.3 }}
           className="mt-12 lg:mt-16 bg-white/80 backdrop-blur-md border border-[#F3E0C0] rounded-[24px] py-6 px-6 lg:py-8 lg:px-10 shadow-[0_12px_40px_rgba(229,186,115,0.1)]"
         >
-          <div className="grid grid-cols-2 lg:grid-cols-4 gap-6 lg:gap-4 divide-y lg:divide-y-0 lg:divide-x divide-[#F3E0C0]">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 lg:gap-4 divide-y sm:divide-y-0 sm:divide-x divide-[#F3E0C0]">
             {stats.map((stat, index) => (
               <div 
                 key={index} 

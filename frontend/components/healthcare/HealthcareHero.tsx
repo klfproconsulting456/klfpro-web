@@ -13,12 +13,9 @@ export function HealthcareHero() {
       }}
     >
       
-      {/* Absolute Gradient Overlay: Left-Bottom to Right-Top */}
+      {/* Absolute Gradient Overlay: Bottom-to-Top on mobile, Left-to-Right on Desktop */}
       <div 
-        className="absolute inset-0 z-0" 
-        style={{
-          background: "linear-gradient(90deg, rgba(252,248,242,0.95) 0%, rgba(252,248,242,0.75) 30%, rgba(252,248,242,0) 60%)"
-        }}
+        className="absolute inset-0 z-0 bg-gradient-to-b sm:bg-gradient-to-r from-[#FCF8F2]/95 sm:via-[#FCF8F2]/75 to-transparent sm:to-transparent sm:from-10% sm:via-40% sm:to-60%"
       />
 
       {/* Main flex container */}

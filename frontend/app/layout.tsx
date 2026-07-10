@@ -52,7 +52,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
           }}
         />
       </head>
-      <body className={`${inter.className} font-sans`}>
+      <body className={`${inter.className} font-sans overflow-x-hidden w-full max-w-[100vw]`}>
         {/* Google Tag Manager (noscript) */}
         <noscript>
           <iframe

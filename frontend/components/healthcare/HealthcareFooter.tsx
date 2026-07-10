@@ -15,11 +15,11 @@ export function HealthcareFooter() {
           {/* LEFT COLUMN — Logo, Description, Social Icons */}
           <div>
             <Link href="/" className="flex items-center gap-2.5">
-              <div className="flex h-9 w-9 items-center justify-center rounded-lg bg-gradient-to-br from-[#D4A937] to-amber-500 shadow-md">
-                <svg className="h-4.5 w-4.5 text-[#081428]" fill="currentColor" viewBox="0 0 24 24">
-                  <path d="M19 10.5h-5.5V5a1 1 0 0 0-1-1h-1a1 1 0 0 0-1 1v5.5H5a1 1 0 0 0-1 1v1a1 1 0 0 0 1 1h5.5V19a1 1 0 0 0 1 1h1a1 1 0 0 0 1-1v-5.5H19a1 1 0 0 0 1-1v-1a1 1 0 0 0-1-1z" />
-                </svg>
-              </div>
+              <img 
+                src="/healthcare-logo.png" 
+                alt="KLFPRO Healthcare Logo" 
+                className="h-9 w-auto object-contain" 
+              />
               <span className="text-[16px] font-bold text-white">
                 KLFPRO <span className="text-[#D4A937]">Healthcare</span>
               </span>

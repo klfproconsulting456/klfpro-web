@@ -82,16 +82,6 @@ export function ContactModal({ isOpen, onClose }: ContactModalProps) {
                         <a href="mailto:hr@klfpro.in" className="text-[15px] font-medium text-[#5F6B7A] hover:text-[#1C2233]">hr@klfpro.in</a>
                       </div>
 
-                      <div>
-                        <h4 className="text-[13px] font-bold text-[#1C2233] uppercase tracking-wider mb-1 flex items-center gap-2">
-                          <span>🕒</span> Business Hours
-                        </h4>
-                        <div className="text-[14px] text-[#5F6B7A] space-y-1">
-                          <p>Monday – Friday: <span className="font-medium text-[#1C2233]">9:00 AM – 6:00 PM (IST)</span></p>
-                          <p>Saturday: <span className="font-medium text-[#1C2233]">9:00 AM – 1:00 PM (IST)</span></p>
-                          <p>Sunday: <span className="font-medium text-[#1C2233]">Closed</span></p>
-                        </div>
-                      </div>
                     </div>
                   </div>
                 </div>

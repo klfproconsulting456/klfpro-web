@@ -43,7 +43,7 @@ export default function ContactPage() {
 
                 <div>
                   <h4 className="text-[13px] font-bold text-[#1C2233] uppercase tracking-wider mb-1 flex items-center gap-2">
-                    <span>📍</span> Corporate Office
+                    <span>🏢</span> Corporate Office
                   </h4>
                   <p className="text-[15px] font-medium text-[#5F6B7A] leading-relaxed max-w-[280px]">
                     OFFICE NO.1142, TOWER B3, SPAZE ITECH PARK, SECTOR 49, GURUGRAM, HARYANA 122018

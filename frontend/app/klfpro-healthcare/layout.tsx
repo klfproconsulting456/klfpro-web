@@ -3,18 +3,18 @@ import { HealthcareNavbar } from "@/components/healthcare/HealthcareNavbar";
 import { HealthcareFooter } from "@/components/healthcare/HealthcareFooter";
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://klfprohealthcare.com"),
+  metadataBase: new URL("https://www.klfprohealthcare.com"),
   title: "KLFPRO Healthcare | Premium Revenue Cycle Management & Medical Billing USA",
   description: "End-to-end healthcare solutions, revenue cycle management, medical billing, medical coding, and BPO services in the USA to optimize your financial performance.",
   keywords: ["Revenue Cycle Management", "Medical Billing Services USA", "Healthcare BPO Services USA", "Medical Coding Services USA", "Healthcare IT Consulting", "Outsourced Medical Billing USA", "RCM Services"],
   authors: [{ name: "KLFPRO Healthcare" }],
   alternates: {
-    canonical: "https://klfprohealthcare.com",
+    canonical: "https://www.klfprohealthcare.com",
   },
   openGraph: {
     title: "KLFPRO Healthcare | Premium Revenue Cycle & Medical Billing USA",
     description: "End-to-end healthcare solutions, revenue cycle management, medical billing, and BPO services to optimize your financial performance.",
-    url: "https://klfprohealthcare.com",
+    url: "https://www.klfprohealthcare.com",
     siteName: "KLFPRO Healthcare",
     type: "website",
     locale: "en_US",

@@ -27,7 +27,7 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
 
   // KLFPRO Healthcare Routes
   sitemapData.push({
-    url: "https://klfprohealthcare.com/klfpro-healthcare",
+    url: "https://www.klfprohealthcare.com",
     lastModified: new Date(),
     changeFrequency: "weekly",
     priority: 1
@@ -35,7 +35,7 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
 
   Object.keys(healthcareServicesData).forEach((slug) => {
     sitemapData.push({
-      url: `https://klfprohealthcare.com/klfpro-healthcare/services/${slug}`,
+      url: `https://www.klfprohealthcare.com/services/${slug}`,
       lastModified: new Date(),
       changeFrequency: "weekly",
       priority: 0.8

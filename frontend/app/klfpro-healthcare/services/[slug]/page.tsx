@@ -14,7 +14,7 @@ export function generateMetadata({ params }: { params: { slug: string } }): Meta
     };
   }
 
-  const url = `https://klfprohealthcare.com/klfpro-healthcare/services/${params.slug}`;
+  const url = `https://www.klfprohealthcare.com/services/${params.slug}`;
 
   return {
     title: `${service.title} | KLFPRO Healthcare`,

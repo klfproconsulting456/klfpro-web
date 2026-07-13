@@ -9,7 +9,7 @@ export default function robots(): MetadataRoute.Robots {
     },
     sitemap: [
       `${siteConfig.domain}/sitemap.xml`,
-      "https://klfprohealthcare.com/sitemap.xml"
+      "https://www.klfprohealthcare.com/sitemap.xml"
     ]
   };
 }

@@ -14,9 +14,26 @@ export function generateMetadata({ params }: { params: { slug: string } }): Meta
     };
   }
 
+  const url = `https://klfprohealthcare.com/klfpro-healthcare/services/${params.slug}`;
+
   return {
-    title: `${service.title} - KLFPRO Healthcare`,
+    title: `${service.title} | KLFPRO Healthcare`,
     description: service.description,
+    keywords: [service.title, "Healthcare Services", "KLFPRO Healthcare", "USA"],
+    alternates: {
+      canonical: url,
+    },
+    openGraph: {
+      title: `${service.title} | KLFPRO Healthcare`,
+      description: service.description,
+      url: url,
+      type: "article",
+    },
+    twitter: {
+      card: "summary_large_image",
+      title: `${service.title} | KLFPRO Healthcare`,
+      description: service.description,
+    }
   };
 }
 

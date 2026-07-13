@@ -1,5 +1,6 @@
 import type { MetadataRoute } from "next";
 import { siteConfig } from "@/content/site-data";
+import { healthcareServicesData } from "../data/healthcare-services";
 
 export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
   const staticRoutes = [
@@ -23,6 +24,23 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     changeFrequency: "weekly",
     priority: route === "" ? 1 : 0.8
   }));
+
+  // KLFPRO Healthcare Routes
+  sitemapData.push({
+    url: "https://klfprohealthcare.com/klfpro-healthcare",
+    lastModified: new Date(),
+    changeFrequency: "weekly",
+    priority: 1
+  });
+
+  Object.keys(healthcareServicesData).forEach((slug) => {
+    sitemapData.push({
+      url: `https://klfprohealthcare.com/klfpro-healthcare/services/${slug}`,
+      lastModified: new Date(),
+      changeFrequency: "weekly",
+      priority: 0.8
+    });
+  });
 
   try {
     const res = await fetch("http://localhost:4000/api/leads/seo-pages/all", { next: { revalidate: 3600 } });

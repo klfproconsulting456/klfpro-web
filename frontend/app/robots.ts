@@ -7,6 +7,9 @@ export default function robots(): MetadataRoute.Robots {
       userAgent: "*",
       allow: "/"
     },
-    sitemap: `${siteConfig.domain}/sitemap.xml`
+    sitemap: [
+      `${siteConfig.domain}/sitemap.xml`,
+      "https://klfprohealthcare.com/sitemap.xml"
+    ]
   };
 }

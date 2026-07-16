@@ -2,6 +2,7 @@ import { Metadata } from "next";
 import ServicesHero from "@/components/healthcare/services/ServicesHero";
 import ServicesCoreGrid from "@/components/healthcare/services/ServicesCoreGrid";
 import ServicesOverview from "@/components/healthcare/services/ServicesOverview";
+import ServicesCaseStudies from "@/components/healthcare/services/ServicesCaseStudies";
 
 export const metadata: Metadata = {
   title: "Our Services | KLFPRO Healthcare",
@@ -24,6 +25,7 @@ export default function ServicesPage() {
         <div className="relative z-10">
           <ServicesOverview />
           <ServicesCoreGrid />
+          <ServicesCaseStudies />
         </div>
       </div>
     </div>

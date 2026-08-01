@@ -89,7 +89,8 @@ const sections: JourneySection[] = [
     image: "/images/marketing/home-loan.jpg",
     imageAlt: "KLFPRO home loan visual",
     applyHref: "/loans/home",
-    exploreHref: "/loans/home"
+    exploreHref: "/loans/home",
+    reverse: true
   }
 ];
 

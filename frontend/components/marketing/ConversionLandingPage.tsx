@@ -20,8 +20,8 @@ import { ChatFab } from "./ChatFab";
 const productCards = [
   {
     title: "Home Loan",
-    description: "Instant approval at competitive rates starting at 8.5% p.a.",
-    badge: "8.5% p.a.",
+    description: "Instant approval at competitive rates starting at 7.3% p.a.",
+    badge: "7.3% p.a.",
     image: "/assets/products/home-loan.png"
   },
   {
@@ -194,7 +194,6 @@ export function ConversionLandingPage() {
       >
         <div className="mx-auto max-w-[1240px] px-4 md:px-6">
           <h2 className="text-3xl font-bold tracking-tight md:text-4xl">Our Financial Products</h2>
-          <p className="mt-3 max-w-2xl text-[#1E293B]">Exact products data with modern UI layout and long-page flow.</p>
           <div className="mt-10 grid gap-4 md:grid-cols-2 lg:grid-cols-3" style={{ perspective: "1000px" }}>
             {productCards.map((card, idx) => (
               <motion.article

@@ -1,4 +1,4 @@
-// File: D:\Documents\desktop\klfpro-website\frontend\app\contact\page.tsx
+// File: D:\Desktop\klfpro-website\frontend\app\contact\page.tsx
 import * as entry from '../../../../app/contact/page.js'
 import type { ResolvingMetadata, ResolvingViewport } from 'next/dist/lib/metadata/types/metadata-interface.js'
 

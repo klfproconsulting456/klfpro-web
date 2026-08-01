@@ -1,4 +1,4 @@
-// File: D:\Documents\desktop\klfpro-website\frontend\app\eligibility\page.tsx
+// File: D:\Desktop\klfpro-website\frontend\app\eligibility\page.tsx
 import * as entry from '../../../../app/eligibility/page.js'
 import type { ResolvingMetadata, ResolvingViewport } from 'next/dist/lib/metadata/types/metadata-interface.js'
 

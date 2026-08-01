@@ -28,27 +28,27 @@ const usageCards = [
 function UsageIcon({ type }: { type: (typeof usageCards)[number]["icon"] }) {
   if (type === "medical") {
     return (
-      <svg viewBox="0 0 24 24" className="h-6 w-6 text-[#B8972E]/90" aria-hidden>
-        <path d="M4 3h16a1 1 0 0 1 1 1v16h-6v-3H9v3H3V4a1 1 0 0 1 1-1Zm6 5v2H8v2h2v2h2v-2h2v-2h-2V8h-2Z" fill="currentColor" />
+      <svg viewBox="0 0 24 24" className="h-5 w-5 sm:h-6 sm:w-6 text-[#B8972E]/90" aria-hidden>
+        <path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2Zm-2 10h-4v4h-2v-4H7v-2h4V7h2v4h4v2Z" fill="currentColor" />
       </svg>
     );
   }
   if (type === "home") {
     return (
-      <svg viewBox="0 0 24 24" className="h-6 w-6 text-[#B8972E]/90" aria-hidden>
+      <svg viewBox="0 0 24 24" className="h-5 w-5 sm:h-6 sm:w-6 text-[#B8972E]/90" aria-hidden>
         <path d="M12 3 3 10h2v10h5v-6h4v6h5V10h2L12 3Z" fill="currentColor" />
       </svg>
     );
   }
   if (type === "wedding") {
     return (
-      <svg viewBox="0 0 24 24" className="h-6 w-6 text-[#B8972E]/90" aria-hidden>
+      <svg viewBox="0 0 24 24" className="h-5 w-5 sm:h-6 sm:w-6 text-[#B8972E]/90" aria-hidden>
         <path d="M12 4a4 4 0 0 1 4 4c0 1.5-.8 2.8-2 3.5V20h-4v-8.5A4 4 0 0 1 8 8a4 4 0 0 1 4-4Zm-6 9h3v2H6v5H4v-5H1v-2h3V8h2v5Zm14 0h3v2h-3v5h-2v-5h-3v-2h3V8h2v5Z" fill="currentColor" />
       </svg>
     );
   }
   return (
-    <svg viewBox="0 0 24 24" className="h-6 w-6 text-[#B8972E]/90" aria-hidden>
+    <svg viewBox="0 0 24 24" className="h-5 w-5 sm:h-6 sm:w-6 text-[#B8972E]/90" aria-hidden>
       <path d="M12 2a10 10 0 1 0 10 10A10 10 0 0 0 12 2Zm7.5 9h-3.2a14 14 0 0 0-1.1-5A8 8 0 0 1 19.5 11ZM12 4.1A12 12 0 0 1 14.3 11H9.7A12 12 0 0 1 12 4.1ZM4.5 13h3.2a14 14 0 0 0 1.1 5 8 8 0 0 1-4.3-5Zm0-2a8 8 0 0 1 4.3-5 14 14 0 0 0-1.1 5H4.5Zm7.5 8.9A12 12 0 0 1 9.7 13h4.6A12 12 0 0 1 12 19.9Zm3.2-1.9a14 14 0 0 0 1.1-5h3.2a8 8 0 0 1-4.3 5Z" fill="currentColor" />
     </svg>
   );
@@ -66,16 +66,16 @@ export function UsageSection({ loanType = "Personal Loan" }: { loanType?: string
     : usageCards;
 
   return (
-    <section className="relative overflow-hidden border-t border-[#0A1128]/15 bg-[#FAF6EE] px-6 py-16">
+    <section className="relative overflow-hidden border-t border-[#0A1128]/15 bg-[#FAF6EE] px-4 sm:px-6 py-10 sm:py-16">
       <div className="pointer-events-none absolute inset-0 bg-[radial-gradient(ellipse_60%_40%_at_10%_80%,rgba(153,27,51,0.06),transparent_45%)]" aria-hidden />
-      <div className="relative mx-auto grid max-w-6xl items-center gap-10 lg:grid-cols-[0.9fr_1.1fr]">
+      <div className="relative mx-auto grid max-w-6xl items-center gap-6 sm:gap-10 lg:grid-cols-[0.9fr_1.1fr]">
         <div>
-          <h2 className="text-4xl font-semibold leading-tight text-[#0A1128] md:text-[36px]">
+          <h2 className="text-3xl font-semibold leading-tight text-[#0A1128] md:text-[36px]">
             How to Use Your
             <br />
             <span className="klf-gold-shimmer-text">{loanType}</span>
           </h2>
-          <p className="mt-4 max-w-md text-base leading-relaxed text-[#1E293B]">
+          <p className="mt-3 sm:mt-4 max-w-md text-[13px] sm:text-base leading-relaxed text-[#1E293B]">
             Are you facing unexpected expenses? KLFPRO Consulting helps you manage urgent financial needs with
             competitive offers. From essential purchases to major life goals, get funds quickly and easily.
           </p>
@@ -89,7 +89,7 @@ export function UsageSection({ loanType = "Personal Loan" }: { loanType?: string
             hidden: {},
             show: { transition: { staggerChildren: 0.08 } }
           }}
-          className="grid gap-6 sm:grid-cols-2"
+          className="grid gap-4 sm:gap-6 sm:grid-cols-2"
         >
           {cards.map((card) => (
             <motion.article
@@ -97,13 +97,13 @@ export function UsageSection({ loanType = "Personal Loan" }: { loanType?: string
               variants={{ hidden: { opacity: 0, y: 16 }, show: { opacity: 1, y: 0 } }}
               transition={{ duration: 0.35, ease: "easeOut" }}
               whileHover={{ y: -6, boxShadow: "0 20px 48px -16px rgba(212,175,55,0.1)" }}
-              className="rounded-2xl border border-[#0A1128]/15 bg-[#0A1128]/5 p-5 shadow-[0_16px_40px_-24px_rgba(0,0,0,0.55)] backdrop-blur-md transition-colors duration-300 hover:border-[#D4AF37]/20"
+              className="rounded-xl sm:rounded-2xl border border-[#0A1128]/15 bg-[#0A1128]/5 p-4 sm:p-5 shadow-[0_16px_40px_-24px_rgba(0,0,0,0.55)] backdrop-blur-md transition-colors duration-300 hover:border-[#D4AF37]/20"
             >
-              <div className="mb-4 flex h-11 w-11 items-center justify-center rounded-xl border border-[#0A1128]/15 bg-[#0A1128]/5">
+              <div className="mb-3 sm:mb-4 flex h-9 w-9 sm:h-11 sm:w-11 items-center justify-center rounded-xl border border-[#0A1128]/15 bg-[#0A1128]/5">
                 <UsageIcon type={card.icon} />
               </div>
-              <h3 className="mb-2 text-lg font-semibold leading-snug text-[#0A1128]">{card.title}</h3>
-              <p className="text-sm leading-relaxed text-[#1E293B] line-clamp-3">{card.text}</p>
+              <h3 className="mb-1.5 sm:mb-2 text-[15px] sm:text-lg font-semibold leading-snug text-[#0A1128]">{card.title}</h3>
+              <p className="text-[13px] sm:text-sm leading-relaxed text-[#1E293B] line-clamp-3">{card.text}</p>
             </motion.article>
           ))}
         </motion.div>

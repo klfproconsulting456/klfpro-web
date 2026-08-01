@@ -36,31 +36,31 @@ const FEATURES = [
 
 export function KeyBenefitsSection({ loanType = "Personal Loan" }: { loanType?: string }) {
   return (
-    <section className="relative overflow-hidden border-t border-[#0A1128]/15 bg-[#FAF6EE] px-6 py-16">
+    <section className="relative overflow-hidden border-t border-[#0A1128]/15 bg-[#FAF6EE] px-4 sm:px-6 py-10 sm:py-16">
       <div className="pointer-events-none absolute inset-0 bg-[radial-gradient(ellipse_70%_50%_at_20%_10%,rgba(212,175,55,0.08),transparent_52%)]" />
       <div className="mx-auto max-w-7xl text-center">
-        <h2 className="text-4xl font-semibold text-[#0A1128]">
+        <h2 className="text-3xl md:text-4xl font-semibold text-[#0A1128]">
           Key Benefits and Features of{" "}
           <span className="klf-gold-shimmer-text">{loanType}</span>
         </h2>
-        <p className="mt-2 text-sm text-[#1E293B] md:text-[15px]">
+        <p className="mt-2 text-[13px] text-[#1E293B] md:text-[15px]">
           Check all the perks of availing a {loanType} at a glance.
         </p>
 
-        <div className="mt-12 grid gap-10 text-left md:grid-cols-3">
+        <div className="mt-8 md:mt-12 grid gap-4 sm:gap-6 md:grid-cols-3">
           {FEATURES.map((feature) => (
             <article
               key={feature.title}
               className={[
-                "rounded-xl p-5 shadow-sm transition-shadow hover:shadow-md",
+                "rounded-xl p-4 sm:p-5 shadow-sm transition-shadow hover:shadow-md",
                 feature.featured
                   ? "border border-amber-300/20 bg-gradient-to-b from-amber-300/10 to-white/[0.03] md:scale-[1.02]"
                   : "border border-[#0A1128]/15 bg-[#0A1128]/5"
               ].join(" ")}
             >
-              <div className="text-xl text-[#B8972E]/90">{feature.icon}</div>
-              <h3 className="mt-3 text-lg font-semibold text-[#0A1128]">{feature.title}</h3>
-              <p className="mt-2 text-sm leading-relaxed text-[#1E293B]">{feature.desc}</p>
+              <div className="text-[18px] sm:text-xl text-[#B8972E]/90">{feature.icon}</div>
+              <h3 className="mt-2 sm:mt-3 text-[15px] sm:text-lg font-semibold text-[#0A1128]">{feature.title}</h3>
+              <p className="mt-1.5 sm:mt-2 text-[13px] sm:text-sm leading-relaxed text-[#1E293B]">{feature.desc}</p>
             </article>
           ))}
         </div>

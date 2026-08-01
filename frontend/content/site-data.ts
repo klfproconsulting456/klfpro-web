@@ -6,7 +6,7 @@ export const siteConfig = {
   emailPrimary: "info@klfpro.com",
   emailSecondary: "klfproconsulting@gmail.com",
   address: "OFFICE NO.1142, TOWER B3, SPAZE I-TECH PARK, GURUGAON",
-  hours: "Mon-Sat: 9AM - 6PM"
+  hours: "Mon-Sat: 10AM - 7PM"
 };
 
 export const loanTypes = [

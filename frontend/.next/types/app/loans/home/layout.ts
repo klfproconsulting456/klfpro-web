@@ -1,4 +1,4 @@
-// File: D:\Documents\desktop\klfpro-website\frontend\app\loans\home\layout.tsx
+// File: D:\Desktop\klfpro-website\frontend\app\loans\home\layout.tsx
 import * as entry from '../../../../../app/loans/home/layout.js'
 import type { ResolvingMetadata, ResolvingViewport } from 'next/dist/lib/metadata/types/metadata-interface.js'
 

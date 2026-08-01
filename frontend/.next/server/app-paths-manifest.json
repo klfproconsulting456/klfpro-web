@@ -1,3 +1,5 @@
 {
-  "/klfpro-healthcare/services/page": "app/klfpro-healthcare/services/page.js"
+  "/page": "app/page.js",
+  "/loans/personal-loan/page": "app/loans/personal-loan/page.js",
+  "/_not-found/page": "app/_not-found/page.js"
 }

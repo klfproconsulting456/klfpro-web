@@ -22,32 +22,32 @@ export function HowToApplySection({ loanType = "Personal Loan" }: { loanType?: s
   ] as const;
 
   return (
-    <section className="relative overflow-hidden border-t border-[#0A1128]/15 bg-[#FAF6EE] px-6 py-16">
+    <section className="relative overflow-hidden border-t border-[#0A1128]/15 bg-[#FAF6EE] px-4 sm:px-6 py-10 sm:py-16">
       <div className="pointer-events-none absolute inset-0 bg-[radial-gradient(ellipse_60%_45%_at_85%_5%,rgba(212,175,55,0.08),transparent_50%)]" />
       <div className="mx-auto max-w-7xl text-center">
-        <h2 className="text-4xl font-semibold text-[#0A1128]">
+        <h2 className="text-3xl md:text-4xl font-semibold text-[#0A1128]">
           How to Apply for a <span className="klf-gold-shimmer-text">{loanType}</span>
         </h2>
-        <p className="mt-2 text-sm text-[#1E293B] md:text-[15px]">
+        <p className="mt-2 text-[13px] sm:text-sm text-[#1E293B] md:text-[15px]">
           Get your loan approvals in 3 instant steps.
         </p>
 
-        <div className="mt-12 grid items-start gap-10 text-left md:grid-cols-2">
+        <div className="mt-8 md:mt-12 grid items-start gap-6 sm:gap-10 text-left md:grid-cols-2">
           {/* Left: Steps */}
           <div className="space-y-4">
             {steps.map((step) => (
               <div
                 key={step.number}
-                className="relative flex items-start gap-4 rounded-xl border border-[#0A1128]/15 bg-[#0A1128]/5 p-5 shadow-[0_18px_36px_-24px_rgba(0,0,0,0.7)] before:absolute before:left-0 before:top-0 before:h-full before:w-1 before:rounded-l-xl before:bg-gradient-to-b before:from-amber-300 before:to-[#B8972E]"
+                className="relative flex items-start gap-3 sm:gap-4 rounded-xl border border-[#0A1128]/15 bg-[#0A1128]/5 p-4 sm:p-5 shadow-[0_18px_36px_-24px_rgba(0,0,0,0.7)] before:absolute before:left-0 before:top-0 before:h-full before:w-1 before:rounded-l-xl before:bg-gradient-to-b before:from-amber-300 before:to-[#B8972E]"
               >
-                <div className="mt-0.5 flex h-9 w-9 items-center justify-center rounded-lg border border-[#0A1128]/15 bg-[#FAF6EE] text-sm font-semibold text-[#B8972E] shadow-sm">
+                <div className="mt-0.5 flex h-8 w-8 sm:h-9 sm:w-9 shrink-0 items-center justify-center rounded-lg border border-[#0A1128]/15 bg-[#FAF6EE] text-[13px] sm:text-sm font-semibold text-[#B8972E] shadow-sm">
                   {step.number}
                 </div>
                 <div>
-                  <h3 className="text-sm font-semibold text-[#0A1128] md:text-[15px]">{step.title}</h3>
-                  <p className="mt-1 text-xs text-[#1E293B] md:text-[13px]">{step.desc}</p>
+                  <h3 className="text-[14px] font-semibold text-[#0A1128] sm:text-sm md:text-[15px]">{step.title}</h3>
+                  <p className="mt-1 text-[12px] text-[#1E293B] sm:text-xs md:text-[13px] leading-relaxed">{step.desc}</p>
                 </div>
-                <div className="pointer-events-none absolute right-4 top-4 text-3xl font-bold text-[#0A1128]/10 opacity-70">
+                <div className="pointer-events-none absolute right-3 top-3 sm:right-4 sm:top-4 text-2xl sm:text-3xl font-bold text-[#0A1128]/10 opacity-70">
                   {step.number}
                 </div>
               </div>

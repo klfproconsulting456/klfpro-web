@@ -1,4 +1,4 @@
-// File: D:\Documents\desktop\klfpro-website\frontend\app\api\news\fetch\route.ts
+// File: D:\Desktop\klfpro-website\frontend\app\api\news\fetch\route.ts
 import * as entry from '../../../../../../app/api/news/fetch/route.js'
 import type { NextRequest } from 'next/server.js'
 

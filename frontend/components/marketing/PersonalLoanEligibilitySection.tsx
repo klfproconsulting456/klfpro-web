@@ -2,24 +2,24 @@
 
 export function PersonalLoanEligibilitySection({ loanType = "Personal Loan" }: { loanType?: string }) {
   return (
-    <section className="relative overflow-hidden border-t border-[#0A1128]/15 bg-[#FAF6EE] px-6 py-16 text-center">
+    <section className="relative overflow-hidden border-t border-[#0A1128]/15 bg-[#FAF6EE] px-4 sm:px-6 py-10 sm:py-16 text-center">
       <div className="pointer-events-none absolute inset-0 bg-[radial-gradient(ellipse_65%_50%_at_50%_0%,rgba(212,175,55,0.08),transparent_55%)]" />
       <div className="mx-auto max-w-7xl">
         <div className="mx-auto max-w-3xl">
-          <h2 className="text-4xl font-semibold text-[#0A1128]">
+          <h2 className="text-3xl md:text-4xl font-semibold text-[#0A1128]">
             <span className="klf-gold-shimmer-text">{loanType} Eligibility:</span>
             <br />
             <span className="mt-2 inline-block text-[#0A1128]">Clear, Simple, and Accessible</span>
           </h2>
-          <p className="mt-4 mx-auto max-w-2xl text-sm text-[#1E293B] md:text-[15px]">
+          <p className="mt-3 sm:mt-4 mx-auto max-w-2xl text-[13px] sm:text-sm text-[#1E293B] md:text-[15px]">
             A {loanType} could be your financial solution if you meet the basic eligibility requirements. Here&apos;s a quick
             breakdown of the key criteria to help you prepare and apply with confidence.
           </p>
         </div>
 
-        <div className="mt-12 grid items-start gap-12 text-left md:grid-cols-2">
+        <div className="mt-8 md:mt-12 grid items-start gap-6 sm:gap-12 text-left md:grid-cols-2">
           {/* Left: Eligibility table */}
-          <div className="space-y-4 rounded-2xl border border-[#0A1128]/15 bg-[#0A1128]/5 p-5 shadow-[0_24px_50px_-30px_rgba(0,0,0,0.75)] backdrop-blur-md">
+          <div className="space-y-3 sm:space-y-4 rounded-xl sm:rounded-2xl border border-[#0A1128]/15 bg-[#0A1128]/5 p-4 sm:p-5 shadow-[0_24px_50px_-30px_rgba(0,0,0,0.75)] backdrop-blur-md">
             {[
               { label: "Age limit", desc: "Typically between 21 and 60 years" },
               { label: "Income", desc: "A steady income from employment or business" },

@@ -91,13 +91,13 @@ export function MidPageOfferSlider() {
       <div className="h-6 w-full bg-gradient-to-r from-transparent via-[#D4AF37]/20 to-transparent" />
 
       <div className="mx-auto max-w-[1200px] px-5 md:px-6 [perspective:1200px]">
-        <div className="relative mt-8 h-[360px] md:h-[330px]">
+        <div className="relative mt-8 h-[480px] sm:h-[420px] md:h-[330px]">
           <motion.div style={{ x: smoothX, y: smoothY }}>
             <AnimatePresence initial={false} mode="sync">
               {visibleSlides.map(({ index, position }) => {
                 const slide = slides[index];
                 const isCenter = position === "center";
-                const xValue = position === "left" ? "-60%" : position === "right" ? "60%" : "0%";
+                const xValue = position === "left" ? "-110%" : position === "right" ? "10%" : "-50%";
                 const rotateY = position === "left" ? 15 : position === "right" ? -15 : 0;
                 return (
                   <motion.article
@@ -197,13 +197,13 @@ export function MidPageOfferSlider() {
                       </motion.div>
                     </div>
 
-                    <div className="relative hidden h-full min-h-[220px] md:block">
+                    <div className="relative h-48 w-full shrink-0 overflow-hidden md:h-full md:min-h-[220px]">
                       <motion.div
                         className="absolute inset-0"
                         animate={isCenter ? { y: [-8, 8, -8], scale: [1, 1.02, 1] } : { y: 0, scale: 1 }}
                         transition={isCenter ? { duration: 4.8, repeat: Infinity, ease: "easeInOut" } : { duration: 0.3 }}
                       >
-                        <Image src={slide.image} alt="" fill className="object-cover object-center" sizes="400px" />
+                        <Image src={slide.image} alt="" fill className="object-cover object-center" sizes="400px" unoptimized={true} />
                       </motion.div>
                     </div>
                   </div>

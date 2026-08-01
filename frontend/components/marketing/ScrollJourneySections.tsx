@@ -202,7 +202,7 @@ export function ScrollJourneySections() {
                   <CreditCardOrbit />
                 ) : (
                   <div className="relative h-[310px] w-[235px] overflow-hidden rounded-[26px] border border-black/15 shadow-[0_22px_40px_-24px_rgba(0,0,0,0.65)]">
-                    <Image src={section.image} alt={section.imageAlt} fill className="object-cover" sizes="250px" />
+                    <Image src={section.image} alt={section.imageAlt} fill className="object-cover" sizes="250px" unoptimized={true} />
                     <div className="absolute inset-x-0 top-0 h-24 bg-gradient-to-b from-[#FAF6EE]/35 to-transparent" />
                   </div>
                 )}

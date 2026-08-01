@@ -82,6 +82,7 @@ export function LightProductsBlock() {
                   fill 
                   className="object-cover transition-transform duration-500 group-hover:scale-105" 
                   sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" 
+                  unoptimized={true}
                 />
                 {c.badge && (
                   <span className="absolute right-3 top-3 z-10 rounded-full bg-[#ffca28] px-3 py-1 text-[11px] font-bold text-gray-900 shadow-sm">

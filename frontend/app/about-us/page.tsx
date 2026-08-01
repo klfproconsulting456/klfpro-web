@@ -123,6 +123,7 @@ export default function AboutUsPage() {
                 alt="KLFPRO Team Meeting" 
                 fill 
                 className="object-cover"
+                unoptimized={true}
               />
               
               <div className="absolute bottom-4 left-4 right-4 sm:bottom-6 sm:left-6 sm:right-6 bg-[#323a46]/95 backdrop-blur-md text-white rounded-xl p-4 md:p-6 flex flex-col sm:flex-row items-center justify-between gap-4 shadow-xl border border-white/10">

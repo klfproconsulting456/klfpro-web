@@ -14,7 +14,9 @@ export const targetLoans = [
   { id: "msme-loan", name: "MSME Loan", baseRate: "12.50", maxAmount: "₹2 Crores", type: "Unsecured/Secured", idealFor: "Small business growth, machinery, MSME expansion" },
   { id: "commercial-vehicle-loan", name: "Commercial Vehicle Loan", baseRate: "10.00", maxAmount: "₹5 Crores", type: "Secured", idealFor: "Fleet expansion, logistics, transport business" },
   { id: "car-loan", name: "Car Loan", baseRate: "9.00", maxAmount: "₹1 Crore", type: "Secured", idealFor: "Buying a new or pre-owned car, EV financing" },
-  { id: "education-loan", name: "Education Loan", baseRate: "9.25", maxAmount: "₹1.5 Crores", type: "Unsecured/Secured", idealFor: "Higher education in India or abroad, tuition, living expenses" }
+  { id: "education-loan", name: "Education Loan", baseRate: "9.25", maxAmount: "₹1.5 Crores", type: "Unsecured/Secured", idealFor: "Higher education in India or abroad, tuition, living expenses" },
+  { id: "used-car-loan", name: "Used Car Loan", baseRate: "11.50", maxAmount: "₹50 Lakhs", type: "Secured", idealFor: "Buying a pre-owned car, certified used vehicles" },
+  { id: "two-wheeler-loan", name: "Two Wheeler Loan", baseRate: "9.50", maxAmount: "₹5 Lakhs", type: "Secured", idealFor: "Buying a new motorcycle, scooter, or EV two-wheeler" }
 ];
 
 export const bankPartners = [

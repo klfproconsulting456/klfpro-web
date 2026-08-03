@@ -1,15 +1,14 @@
 import type { MetadataRoute } from "next";
-import { siteConfig } from "@/content/site-data";
 
 export default function robots(): MetadataRoute.Robots {
   return {
-    rules: {
-      userAgent: "*",
-      allow: "/"
-    },
-    sitemap: [
-      `${siteConfig.domain}/sitemap.xml`,
-      "https://www.klfprohealthcare.com/sitemap.xml"
-    ]
+    rules: [
+      {
+        userAgent: "*",
+        allow: "/",
+        disallow: ["/admin/", "/portal/", "/api/", "/login"]
+      }
+    ],
+    sitemap: "https://klfpro.in/sitemap.xml"
   };
 }

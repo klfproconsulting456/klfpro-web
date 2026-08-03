@@ -1,63 +1,32 @@
 import type { MetadataRoute } from "next";
 import { siteConfig } from "@/content/site-data";
-import { healthcareServicesData } from "../data/healthcare-services";
 
 export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
   const staticRoutes = [
-    "",
-    "/loans/home",
-    "/loans/personal-loan",
-    "/loans/business",
-    "/loans/car",
-    "/loans/education",
-    "/loans/loan-against-property",
-    "/emi-calculator", 
-    "/eligibility", 
-    "/credit-score", 
-    "/contact", 
-    "/blog"
+    { path: "", priority: 1, changeFrequency: "weekly" as const },
+    { path: "/about-us", priority: 0.8, changeFrequency: "monthly" as const },
+    { path: "/loans/personal-loan", priority: 0.9, changeFrequency: "weekly" as const },
+    { path: "/loans/home", priority: 0.9, changeFrequency: "weekly" as const },
+    { path: "/loans/business", priority: 0.9, changeFrequency: "weekly" as const },
+    { path: "/loans/car", priority: 0.8, changeFrequency: "weekly" as const },
+    { path: "/loans/education", priority: 0.8, changeFrequency: "weekly" as const },
+    { path: "/loans/loan-against-property", priority: 0.8, changeFrequency: "weekly" as const },
+    { path: "/emi-calculator", priority: 0.7, changeFrequency: "monthly" as const },
+    { path: "/eligibility", priority: 0.8, changeFrequency: "monthly" as const },
+    { path: "/credit-score", priority: 0.7, changeFrequency: "monthly" as const },
+    { path: "/contact", priority: 0.6, changeFrequency: "monthly" as const },
+    { path: "/blog", priority: 0.7, changeFrequency: "daily" as const },
+    { path: "/careers", priority: 0.5, changeFrequency: "monthly" as const },
+    { path: "/legal/privacy", priority: 0.3, changeFrequency: "yearly" as const },
+    { path: "/legal/terms", priority: 0.3, changeFrequency: "yearly" as const },
   ];
 
   const sitemapData: MetadataRoute.Sitemap = staticRoutes.map((route) => ({
-    url: `${siteConfig.domain}${route}`,
+    url: `${siteConfig.domain}${route.path}`,
     lastModified: new Date(),
-    changeFrequency: "weekly",
-    priority: route === "" ? 1 : 0.8
+    changeFrequency: route.changeFrequency,
+    priority: route.priority
   }));
-
-  // KLFPRO Healthcare Routes
-  sitemapData.push({
-    url: "https://www.klfprohealthcare.com",
-    lastModified: new Date(),
-    changeFrequency: "weekly",
-    priority: 1
-  });
-
-  Object.keys(healthcareServicesData).forEach((slug) => {
-    sitemapData.push({
-      url: `https://www.klfprohealthcare.com/services/${slug}`,
-      lastModified: new Date(),
-      changeFrequency: "weekly",
-      priority: 0.8
-    });
-  });
-
-  try {
-    const res = await fetch("http://localhost:4000/api/leads/seo-pages/all", { next: { revalidate: 3600 } });
-    if (res.ok) {
-      const dynamicPages = await res.json();
-      dynamicPages.forEach((page: any) => {
-        sitemapData.push({
-          url: `${siteConfig.domain}/${page.slug}`,
-          lastModified: new Date(page.updatedAt),
-          changeFrequency: "daily",
-          priority: 0.9
-        });
-      });
-    }
-  } catch (e) {
-    console.error("Failed to fetch dynamic sitemap pages", e);
-  }
 
   return sitemapData;
 }

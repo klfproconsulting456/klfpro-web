@@ -4,20 +4,27 @@ import "./globals.css";
 import { AppChrome } from "@/components/layout/AppChrome";
 import { siteConfig } from "@/content/site-data";
 import { CalculatorWrapper } from "@/components/calculators/CalculatorWrapper";
+import { generateOrganizationSchema, generateWebSiteSchema, generateLocalBusinessSchema } from "@/lib/seo";
 
 const inter = Inter({ subsets: ["latin"], variable: "--font-inter" });
 
 export const metadata: Metadata = {
   metadataBase: new URL(siteConfig.domain),
-  title: "KLFPRO Consulting | Your Financial Journey Simplified",
+  title: "KLFPRO Consulting — Personal Loan, Home Loan & Business Loan in Gurgaon | Apply Online",
   description:
-    "Expert financial consulting, loan aggregation, and tailored advisory services by KLFPRO.",
+    "KLFPRO Consulting is Gurgaon's trusted loan agency. Apply for Personal Loan, Home Loan, Business Loan, Loan Against Property, MSME Loan & more. Fast approval, lowest interest rates, expert financial consultants in Gurugram.",
+  alternates: { canonical: "https://klfpro.in" },
   openGraph: {
-    title: "KLFPRO Consulting | Your Financial Journey Simplified",
-    description: "Expert financial consulting, loan aggregation, and tailored advisory services by KLFPRO.",
+    title: "KLFPRO Consulting — Personal Loan, Home Loan & Business Loan in Gurgaon",
+    description: "Gurgaon's trusted loan agency. Apply for Personal, Home, Business Loans & more. Fast approval, lowest rates.",
     url: siteConfig.domain,
     siteName: "KLFPRO Consulting",
     type: "website"
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "KLFPRO Consulting | Loan Agency in Gurgaon",
+    description: "Apply for Personal, Home, Business Loans in Gurgaon. Fast approval & lowest rates."
   },
   robots: {
     index: true,
@@ -29,39 +36,37 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
   return (
     <html lang="en" className={inter.variable}>
       <head>
-        {/* Google Tag Manager */}
-        <script
-          dangerouslySetInnerHTML={{
-            __html: `(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-            new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-            j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-            'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-            })(window,document,'script','dataLayer','GTM-XXXXXXX');` // Replace GTM-XXXXXXX with actual ID
-          }}
-        />
-        {/* Google Analytics 4 */}
-        <script async src={`https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX`} />
+        {/* Google Tag (gtag.js) */}
+        <script async src="https://www.googletagmanager.com/gtag/js?id=GT-WBK82X9C" />
         <script
           dangerouslySetInnerHTML={{
             __html: `
               window.dataLayer = window.dataLayer || [];
               function gtag(){dataLayer.push(arguments);}
               gtag('js', new Date());
-              gtag('config', 'G-XXXXXXXXXX'); // Replace with actual Measurement ID
+              gtag('config', 'GT-WBK82X9C');
+              gtag('config', 'G-JJY1EXQSY6');
+              gtag('config', 'AW-17723359083');
             `
           }}
         />
       </head>
       <body className={`${inter.className} font-sans overflow-x-hidden w-full max-w-[100vw]`}>
-        {/* Google Tag Manager (noscript) */}
-        <noscript>
-          <iframe
-            src="https://www.googletagmanager.com/ns.html?id=GTM-XXXXXXX"
-            height="0"
-            width="0"
-            style={{ display: "none", visibility: "hidden" }}
-          ></iframe>
-        </noscript>
+        {/* Structured Data - Organization */}
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(generateOrganizationSchema()) }}
+        />
+        {/* Structured Data - WebSite */}
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(generateWebSiteSchema()) }}
+        />
+        {/* Structured Data - LocalBusiness */}
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(generateLocalBusinessSchema()) }}
+        />
         <AppChrome>{children}</AppChrome>
         <CalculatorWrapper />
       </body>

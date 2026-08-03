@@ -1,12 +1,28 @@
 export const siteConfig = {
   brandName: "KLFPRO Consulting",
+  legalName: "KLFPRO Consulting Private Limited",
   domain: "https://klfpro.in",
   phonePrimary: "0124-4068700",
   phoneSecondary: "+91 9711000680",
   emailPrimary: "info@klfpro.com",
   emailSecondary: "klfproconsulting@gmail.com",
-  address: "OFFICE NO.1142, TOWER B3, SPAZE I-TECH PARK, GURUGAON",
-  hours: "Mon-Sat: 10AM - 7PM"
+  address: "Office No. 1142, Tower B3, Spaze iTech Park, Sector 49, Gurugram, Haryana 122018",
+  addressStreet: "Office No. 1142, Tower B3, Spaze iTech Park",
+  addressLocality: "Gurugram",
+  addressRegion: "Haryana",
+  postalCode: "122018",
+  addressCountry: "IN",
+  hours: "Mon-Sat: 10AM - 7PM",
+  foundingYear: 2015,
+  socialLinks: {
+    facebook: "https://www.facebook.com/klfpro",
+    linkedin: "https://www.linkedin.com/company/klfpro",
+    instagram: "https://www.instagram.com/klfpro"
+  },
+  geo: {
+    latitude: 28.4089,
+    longitude: 77.0425
+  }
 };
 
 export const loanTypes = [
@@ -15,9 +31,11 @@ export const loanTypes = [
   "Personal Loans",
   "Loan Against Property",
   "Car Loans",
+  "Education Loans",
   "MSME Loan",
-  "Loan Against Virtual Unit",
-  "Commercial property loan"
+  "Vehicle Loan",
+  "Balance Transfer",
+  "Commercial Property Loan"
 ];
 
 export const testimonials = [

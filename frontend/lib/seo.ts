@@ -1,6 +1,7 @@
 import { Metadata } from "next";
+import { siteConfig } from "@/content/site-data";
 
-const defaultDomain = "https://www.klfpro.in";
+const defaultDomain = "https://klfpro.in";
 
 export function generateSeoMetadata({
   title,
@@ -59,29 +60,104 @@ export function generateOrganizationSchema() {
   return {
     "@context": "https://schema.org",
     "@type": "Organization",
-    name: "KLFPRO Consulting",
+    name: siteConfig.brandName,
+    legalName: siteConfig.legalName,
     url: defaultDomain,
     logo: `${defaultDomain}/logo.png`,
+    foundingDate: String(siteConfig.foundingYear),
+    contactPoint: {
+      "@type": "ContactPoint",
+      telephone: siteConfig.phoneSecondary,
+      contactType: "customer service",
+      areaServed: "IN",
+      availableLanguage: ["English", "Hindi"]
+    },
+    address: {
+      "@type": "PostalAddress",
+      streetAddress: siteConfig.addressStreet,
+      addressLocality: siteConfig.addressLocality,
+      addressRegion: siteConfig.addressRegion,
+      postalCode: siteConfig.postalCode,
+      addressCountry: siteConfig.addressCountry
+    },
     sameAs: [
-      "https://www.facebook.com/klfpro",
-      "https://www.linkedin.com/company/klfpro"
+      siteConfig.socialLinks.facebook,
+      siteConfig.socialLinks.linkedin,
+      siteConfig.socialLinks.instagram
     ]
   };
 }
 
-export function generateLocalBusinessSchema(city: string) {
+export function generateWebSiteSchema() {
+  return {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    name: siteConfig.brandName,
+    url: defaultDomain,
+    potentialAction: {
+      "@type": "SearchAction",
+      target: {
+        "@type": "EntryPoint",
+        urlTemplate: `${defaultDomain}/eligibility?q={search_term_string}`
+      },
+      "query-input": "required name=search_term_string"
+    }
+  };
+}
+
+export function generateLocalBusinessSchema(city?: string) {
   return {
     "@context": "https://schema.org",
     "@type": "FinancialService",
-    name: `KLFPRO Consulting ${city}`,
+    name: city ? `KLFPRO Consulting ${city}` : siteConfig.brandName,
     image: `${defaultDomain}/og-image.jpg`,
-    "@id": `${defaultDomain}/locations/${city.toLowerCase()}`,
-    url: `${defaultDomain}/locations/${city.toLowerCase()}`,
-    telephone: "+919876543210",
+    "@id": `${defaultDomain}/#localbusiness`,
+    url: defaultDomain,
+    telephone: siteConfig.phoneSecondary,
+    priceRange: "$$",
     address: {
       "@type": "PostalAddress",
-      addressLocality: city,
-      addressCountry: "IN"
+      streetAddress: siteConfig.addressStreet,
+      addressLocality: city || siteConfig.addressLocality,
+      addressRegion: siteConfig.addressRegion,
+      postalCode: siteConfig.postalCode,
+      addressCountry: siteConfig.addressCountry
+    },
+    geo: {
+      "@type": "GeoCoordinates",
+      latitude: siteConfig.geo.latitude,
+      longitude: siteConfig.geo.longitude
+    },
+    openingHoursSpecification: [
+      {
+        "@type": "OpeningHoursSpecification",
+        dayOfWeek: ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"],
+        opens: "10:00",
+        closes: "19:00"
+      }
+    ],
+    areaServed: [
+      { "@type": "City", name: "Gurugram" },
+      { "@type": "City", name: "Delhi" },
+      { "@type": "City", name: "Noida" },
+      { "@type": "City", name: "Faridabad" },
+      { "@type": "City", name: "Ghaziabad" }
+    ],
+    hasOfferCatalog: {
+      "@type": "OfferCatalog",
+      name: "Financial Services",
+      itemListElement: [
+        { "@type": "Offer", itemOffered: { "@type": "Service", name: "Personal Loan" } },
+        { "@type": "Offer", itemOffered: { "@type": "Service", name: "Home Loan" } },
+        { "@type": "Offer", itemOffered: { "@type": "Service", name: "Business Loan" } },
+        { "@type": "Offer", itemOffered: { "@type": "Service", name: "Loan Against Property" } },
+        { "@type": "Offer", itemOffered: { "@type": "Service", name: "Car Loan" } },
+        { "@type": "Offer", itemOffered: { "@type": "Service", name: "Education Loan" } },
+        { "@type": "Offer", itemOffered: { "@type": "Service", name: "MSME Loan" } },
+        { "@type": "Offer", itemOffered: { "@type": "Service", name: "Credit Card" } },
+        { "@type": "Offer", itemOffered: { "@type": "Service", name: "Balance Transfer" } },
+        { "@type": "Offer", itemOffered: { "@type": "Service", name: "CIBIL Services" } }
+      ]
     }
   };
 }

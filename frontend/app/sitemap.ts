@@ -1,5 +1,6 @@
 import type { MetadataRoute } from "next";
 import { siteConfig } from "@/content/site-data";
+import { programmaticPages } from "@/content/locations";
 
 export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
   const staticRoutes = [
@@ -21,7 +22,15 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     { path: "/legal/terms", priority: 0.3, changeFrequency: "yearly" as const },
   ];
 
-  const sitemapData: MetadataRoute.Sitemap = staticRoutes.map((route) => ({
+  const programmaticRoutes = programmaticPages.map(page => ({
+    path: `/${page.slug}`,
+    priority: 0.8,
+    changeFrequency: "weekly" as const
+  }));
+
+  const allRoutes = [...staticRoutes, ...programmaticRoutes];
+
+  const sitemapData: MetadataRoute.Sitemap = allRoutes.map((route) => ({
     url: `${siteConfig.domain}${route.path}`,
     lastModified: new Date(),
     changeFrequency: route.changeFrequency,

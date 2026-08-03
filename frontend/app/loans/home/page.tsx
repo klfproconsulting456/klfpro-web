@@ -1,6 +1,8 @@
 "use client";
 
 import { useState } from "react";
+import { Breadcrumbs } from "@/components/seo/Breadcrumbs";
+import { generateFinancialProductSchema } from "@/lib/seo";
 import { ChatFab } from "@/components/marketing/ChatFab";
 import { HeroSection } from "@/components/marketing/HeroSection";
 import { WhyChooseUsSection } from "@/components/marketing/WhyChooseUsSection";
@@ -78,6 +80,20 @@ export default function HomeLoanPage() {
 
   return (
     <main className="min-h-screen bg-[#FAF6EE] pt-[84px]">
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify(
+            generateFinancialProductSchema({
+              name: "Home Loan",
+              description: "Home Loan up to ₹5 Crore in Gurgaon. Rates from 7.3% p.a. Compare 30+ bank offers.",
+              interestRate: "7.3",
+              url: "/loans/home",
+            })
+          ),
+        }}
+      />
+      <Breadcrumbs items={[{ name: "Home", href: "/" }, { name: "Home Loan", href: "/loans/home" }]} />
       <HeroSection loanType="Home Loan" />
       
       <GenericProductFeatures 

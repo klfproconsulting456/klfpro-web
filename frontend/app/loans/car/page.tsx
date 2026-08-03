@@ -1,6 +1,8 @@
 "use client";
 
 import { useState } from "react";
+import { Breadcrumbs } from "@/components/seo/Breadcrumbs";
+import { generateFinancialProductSchema } from "@/lib/seo";
 import { ChatFab } from "@/components/marketing/ChatFab";
 import { HeroSection } from "@/components/marketing/HeroSection";
 import { WhyChooseUsSection } from "@/components/marketing/WhyChooseUsSection";
@@ -77,6 +79,20 @@ export default function CarLoanPage() {
 
   return (
     <main className="min-h-screen bg-[#FAF6EE] pt-[84px]">
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify(
+            generateFinancialProductSchema({
+              name: "Car Loan",
+              description: "Car Loan with low EMI in Gurgaon. Rates from 9% p.a. for new & used cars.",
+              interestRate: "9.0",
+              url: "/loans/car",
+            })
+          ),
+        }}
+      />
+      <Breadcrumbs items={[{ name: "Home", href: "/" }, { name: "Car Loan", href: "/loans/car" }]} />
       <HeroSection loanType="Car Loan" />
       
       <GenericProductFeatures 

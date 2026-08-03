@@ -1,6 +1,8 @@
 "use client";
 
 import { useState } from "react";
+import { Breadcrumbs } from "@/components/seo/Breadcrumbs";
+import { generateFinancialProductSchema } from "@/lib/seo";
 import { ChatFab } from "@/components/marketing/ChatFab";
 import { HeroSection } from "@/components/marketing/HeroSection";
 import { StatsSection } from "@/components/marketing/StatsSection";
@@ -28,6 +30,20 @@ export default function PersonalLoanPage() {
 
   return (
     <main className="min-h-screen bg-[#FAF6EE] pt-[84px]">
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify(
+            generateFinancialProductSchema({
+              name: "Personal Loan",
+              description: "Get Personal Loan up to ₹40 Lakhs in Gurgaon. Fast approval, competitive rates, minimal documentation.",
+              interestRate: "10.25",
+              url: "/loans/personal-loan",
+            })
+          ),
+        }}
+      />
+      <Breadcrumbs items={[{ name: "Home", href: "/" }, { name: "Personal Loan", href: "/loans/personal-loan" }]} />
       <HeroSection />
       <StatsSection />
       <EligibilitySection />

@@ -1,6 +1,8 @@
 "use client";
 
 import { useState } from "react";
+import { Breadcrumbs } from "@/components/seo/Breadcrumbs";
+import { generateFinancialProductSchema } from "@/lib/seo";
 import { ChatFab } from "@/components/marketing/ChatFab";
 import { HeroSection } from "@/components/marketing/HeroSection";
 import { WhyChooseUsSection } from "@/components/marketing/WhyChooseUsSection";
@@ -79,6 +81,20 @@ export default function BusinessLoanPage() {
 
   return (
     <main className="min-h-screen bg-[#FAF6EE] pt-[84px]">
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify(
+            generateFinancialProductSchema({
+              name: "Business Loan",
+              description: "Collateral-free Business Loan up to ₹50 Lakhs in Gurgaon. Quick approval & customized repayment.",
+              interestRate: "14.5",
+              url: "/loans/business",
+            })
+          ),
+        }}
+      />
+      <Breadcrumbs items={[{ name: "Home", href: "/" }, { name: "Business Loan", href: "/loans/business" }]} />
       <HeroSection loanType="Business Loan" />
       
       <GenericProductFeatures 

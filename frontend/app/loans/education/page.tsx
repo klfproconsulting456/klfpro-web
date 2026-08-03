@@ -1,6 +1,8 @@
 "use client";
 
 import { useState } from "react";
+import { Breadcrumbs } from "@/components/seo/Breadcrumbs";
+import { generateFinancialProductSchema } from "@/lib/seo";
 import { ChatFab } from "@/components/marketing/ChatFab";
 import { HeroSection } from "@/components/marketing/HeroSection";
 import { WhyChooseUsSection } from "@/components/marketing/WhyChooseUsSection";
@@ -77,6 +79,20 @@ export default function EducationLoanPage() {
 
   return (
     <main className="min-h-screen bg-[#FAF6EE] pt-[84px]">
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify(
+            generateFinancialProductSchema({
+              name: "Education Loan",
+              description: "Education Loan up to ₹2 Crore in Gurgaon. Study in India & abroad with flexible repayment.",
+              interestRate: "8.5",
+              url: "/loans/education",
+            })
+          ),
+        }}
+      />
+      <Breadcrumbs items={[{ name: "Home", href: "/" }, { name: "Education Loan", href: "/loans/education" }]} />
       <HeroSection loanType="Education Loan" />
       
       <GenericProductFeatures 

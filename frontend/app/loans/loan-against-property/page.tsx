@@ -1,6 +1,8 @@
 "use client";
 
 import { useState } from "react";
+import { Breadcrumbs } from "@/components/seo/Breadcrumbs";
+import { generateFinancialProductSchema } from "@/lib/seo";
 import { ChatFab } from "@/components/marketing/ChatFab";
 import { HeroSection } from "@/components/marketing/HeroSection";
 import { WhyChooseUsSection } from "@/components/marketing/WhyChooseUsSection";
@@ -77,6 +79,20 @@ export default function LAPPage() {
 
   return (
     <main className="min-h-screen bg-[#FAF6EE] pt-[84px]">
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify(
+            generateFinancialProductSchema({
+              name: "Loan Against Property",
+              description: "Loan Against Property up to 70% value in Gurgaon. Competitive rates & fast processing.",
+              interestRate: "9.5",
+              url: "/loans/loan-against-property",
+            })
+          ),
+        }}
+      />
+      <Breadcrumbs items={[{ name: "Home", href: "/" }, { name: "Loan Against Property", href: "/loans/loan-against-property" }]} />
       <HeroSection loanType="Loan Against Property" />
       
       <GenericProductFeatures 

@@ -3,6 +3,7 @@
 import { AnimatePresence, motion, useInView } from "framer-motion";
 import { useRef, useState } from "react";
 import { siteConfig } from "@/content/site-data";
+import { generateFaqSchema } from "@/lib/seo";
 
 export const faqItems = [
   {
@@ -105,6 +106,19 @@ export function FaqSection() {
 
   return (
     <section id="faq" className="relative border-t border-zinc-200/80 bg-zinc-50 py-16 md:py-24">
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify(
+            generateFaqSchema(
+              faqItems.map((item) => ({
+                question: item.question,
+                answer: typeof item.answer === "string" ? item.answer : "Please contact our team or check our detailed guide for full information.",
+              }))
+            )
+          ),
+        }}
+      />
       <div
         className="pointer-events-none absolute inset-0 bg-[radial-gradient(ellipse_80%_50%_at_50%_-10%,rgba(255,255,255,0.9),transparent),linear-gradient(180deg,rgba(250,250,250,0.6)_0%,transparent_35%)]"
         aria-hidden

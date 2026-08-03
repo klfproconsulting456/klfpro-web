@@ -12,7 +12,9 @@ export const targetLoans = [
   { id: "home-loan", name: "Home Loan", baseRate: "8.50", maxAmount: "₹5 Crores", type: "Secured", idealFor: "Buying a new house, construction, renovation" },
   { id: "loan-against-property", name: "Loan Against Property", baseRate: "9.50", maxAmount: "₹10 Crores", type: "Secured", idealFor: "Large business needs, education, debt restructuring" },
   { id: "msme-loan", name: "MSME Loan", baseRate: "12.50", maxAmount: "₹2 Crores", type: "Unsecured/Secured", idealFor: "Small business growth, machinery, MSME expansion" },
-  { id: "commercial-vehicle-loan", name: "Commercial Vehicle Loan", baseRate: "10.00", maxAmount: "₹5 Crores", type: "Secured", idealFor: "Fleet expansion, logistics, transport business" }
+  { id: "commercial-vehicle-loan", name: "Commercial Vehicle Loan", baseRate: "10.00", maxAmount: "₹5 Crores", type: "Secured", idealFor: "Fleet expansion, logistics, transport business" },
+  { id: "car-loan", name: "Car Loan", baseRate: "9.00", maxAmount: "₹1 Crore", type: "Secured", idealFor: "Buying a new or pre-owned car, EV financing" },
+  { id: "education-loan", name: "Education Loan", baseRate: "9.25", maxAmount: "₹1.5 Crores", type: "Unsecured/Secured", idealFor: "Higher education in India or abroad, tuition, living expenses" }
 ];
 
 export const bankPartners = [

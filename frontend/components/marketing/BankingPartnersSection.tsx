@@ -78,7 +78,7 @@ export function BankingPartnersSection() {
               >
                 <div className="relative flex h-full w-full flex-1 items-center justify-center py-2">
                   <div className="relative h-14 w-full md:h-16">
-                    <Image src={bank.image} alt={bank.name} fill className="object-contain transition-transform duration-300 group-hover:scale-105" sizes="(max-width: 640px) 40vw, 180px" />
+                    <Image src={bank.image} alt={bank.name} fill unoptimized className="object-contain transition-transform duration-300 group-hover:scale-105" sizes="(max-width: 640px) 40vw, 180px" />
                   </div>
                 </div>
                 <span className="absolute bottom-2 text-center text-[9px] font-bold uppercase tracking-[0.12em] text-[#0A1128]/60 opacity-0 transition-opacity duration-200 group-hover:opacity-100">

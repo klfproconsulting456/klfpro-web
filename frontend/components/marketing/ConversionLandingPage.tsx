@@ -726,7 +726,7 @@ export function ConversionLandingPage() {
                   className="flex h-16 w-36 items-center justify-center rounded-xl border border-[#0A1128]/15 bg-[#0A1128]/5 px-4 transition-all duration-300 hover:border-[#D4AF37]/50 hover:shadow-[0_0_24px_rgba(212,175,55,0.15)]"
                 >
                   <div className="relative h-10 w-full transition duration-300">
-                    <Image src={bank.image} alt={bank.name} fill className="object-contain" sizes="140px" />
+                    <Image src={bank.image} alt={bank.name} fill unoptimized className="object-contain" sizes="140px" />
                   </div>
                 </motion.div>
               ))}

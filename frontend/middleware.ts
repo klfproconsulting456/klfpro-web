@@ -10,6 +10,15 @@ export function middleware(request: NextRequest) {
   // Remove port for local development
   hostname = hostname.split(':')[0]
 
+  // ── WWW → non-WWW 301 redirect (critical for SEO) ──
+  // Google must see only ONE version of the domain. Redirect www to non-www.
+  if (hostname === 'www.klfpro.in') {
+    const newUrl = new URL(request.url)
+    newUrl.hostname = 'klfpro.in'
+    newUrl.port = ''
+    return NextResponse.redirect(newUrl, 301)
+  }
+
   // Define domains associated with healthcare
   const isHealthcare = 
     hostname === 'klfprohealthcare.com' || 

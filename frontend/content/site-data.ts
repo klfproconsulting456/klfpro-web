@@ -1,7 +1,7 @@
 export const siteConfig = {
   brandName: "KLFPRO Consulting",
   legalName: "KLFPRO Consulting Private Limited",
-  domain: "https://klfpro.in",
+  domain: "https://www.klfpro.in",
   phonePrimary: "0124-4068700",
   phoneSecondary: "+91 9711000680",
   emailPrimary: "info@klfpro.com",

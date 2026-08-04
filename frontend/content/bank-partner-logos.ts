@@ -1,14 +1,14 @@
 import type { StaticImageData } from "next/image";
 
-import axis from "../../assets/BANK-LOGOS/Axis.png";
-import bajaj from "../../assets/BANK-LOGOS/bajaj.png";
-import bom from "../../assets/BANK-LOGOS/BOM.png";
-import hdfc from "../../assets/BANK-LOGOS/HDFC.png";
-import icici from "../../assets/BANK-LOGOS/ICICI.png";
-import idbi from "../../assets/BANK-LOGOS/IDBI.png";
-import kotak from "../../assets/BANK-LOGOS/kotak.png";
-import pnb from "../../assets/BANK-LOGOS/PNB.png";
-import sbi from "../../assets/BANK-LOGOS/SBI.png";
+import axis from "../public/images/marketing/banks/Axis.png";
+import bajaj from "../public/images/marketing/banks/bajaj.png";
+import bom from "../public/images/marketing/banks/BOM.png";
+import hdfc from "../public/images/marketing/banks/HDFC.png";
+import icici from "../public/images/marketing/banks/ICICI.png";
+import idbi from "../public/images/marketing/banks/IDBI.png";
+import kotak from "../public/images/marketing/banks/kotak.png";
+import pnb from "../public/images/marketing/banks/PNB.png";
+import sbi from "../public/images/marketing/banks/SBI.png";
 
 export type BankPartnerLogo = {
   id: string;

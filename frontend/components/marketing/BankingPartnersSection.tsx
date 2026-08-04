@@ -74,14 +74,14 @@ export function BankingPartnersSection() {
                 animate={gridInView ? { opacity: 1, y: 0 } : {}}
                 transition={{ duration: 0.45, delay: i * 0.06, ease: [0.22, 1, 0.36, 1] }}
                 whileHover={{ y: -3, transition: { duration: 0.2 } }}
-                className="group flex min-h-[88px] flex-col items-center justify-center rounded-2xl border border-[#0A1128]/15 bg-[#0A1128]/5 px-4 py-5 shadow-[inset_0_1px_0_rgba(255,255,255,0.04)] backdrop-blur-md transition-[border-color,box-shadow] duration-200 hover:border-[#D4AF37]/25 hover:shadow-[0_12px_40px_-20px_rgba(0,0,0,0.5)]"
+                className="group flex min-h-[100px] flex-col items-center justify-center rounded-2xl border border-[#0A1128]/15 bg-white/60 px-4 py-4 shadow-sm backdrop-blur-md transition-[border-color,box-shadow,background-color] duration-200 hover:bg-white hover:border-[#D4AF37]/35 hover:shadow-[0_12px_40px_-15px_rgba(212,175,55,0.25)]"
               >
-                <div className="relative flex h-[52px] w-full max-w-[132px] items-center justify-center rounded-xl bg-[#0A1128]/5 px-3 shadow-inner">
-                  <div className="relative h-8 w-full md:h-9">
-                    <Image src={bank.image} alt={bank.name} fill className="object-contain" sizes="(max-width: 640px) 40vw, 132px" />
+                <div className="relative flex h-full w-full flex-1 items-center justify-center py-2">
+                  <div className="relative h-14 w-full md:h-16">
+                    <Image src={bank.image} alt={bank.name} fill className="object-contain mix-blend-multiply transition-transform duration-300 group-hover:scale-105" sizes="(max-width: 640px) 40vw, 180px" />
                   </div>
                 </div>
-                <span className="mt-2.5 text-center text-[10px] font-medium uppercase tracking-[0.12em] text-[#1E293B] opacity-0 transition-opacity duration-200 group-hover:opacity-100">
+                <span className="absolute bottom-2 text-center text-[9px] font-bold uppercase tracking-[0.12em] text-[#0A1128]/60 opacity-0 transition-opacity duration-200 group-hover:opacity-100">
                   {bank.name}
                 </span>
               </motion.div>

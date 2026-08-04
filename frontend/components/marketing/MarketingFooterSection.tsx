@@ -20,7 +20,7 @@ const companyLinks = [
   { name: "About Us", href: "/about-us" },
   { name: "Contact Us", href: "/contact" },
   { name: "Careers", href: "/careers" },
-  { name: "FAQs", href: "/faqs" }
+  { name: "FAQs", href: "/#faq" }
 ] as const;
 
 export function MarketingFooterSection() {

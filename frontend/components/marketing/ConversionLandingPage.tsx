@@ -16,6 +16,7 @@ import { BankingPartnersSection } from "./BankingPartnersSection";
 import { MostSearchedLinksSection } from "./MostSearchedLinksSection";
 import { MarketingFooterSection } from "./MarketingFooterSection";
 import { ChatFab } from "./ChatFab";
+import { IndependenceDayWelcome } from "./IndependenceDayWelcome";
 
 const productCards = [
   {
@@ -154,6 +155,8 @@ export function ConversionLandingPage() {
 
   return (
     <main className="min-h-screen text-[#0A1128]">
+      <IndependenceDayWelcome />
+      
       {/* Global Background Image */}
       <div className="pointer-events-none fixed inset-0 -z-30 bg-[#FAF6EE]">
         <Image

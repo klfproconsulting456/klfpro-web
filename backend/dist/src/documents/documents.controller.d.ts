@@ -14,13 +14,13 @@ export declare class DocumentsController {
         type: string;
     }): Promise<{
         id: string;
+        createdAt: Date;
         name: string;
+        status: string;
+        leadId: string;
+        updatedAt: Date;
         type: string;
         fileUrl: string;
-        status: string;
         note: string | null;
-        createdAt: Date;
-        updatedAt: Date;
-        leadId: string;
     }>;
 }

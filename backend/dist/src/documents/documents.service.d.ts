@@ -4,14 +4,14 @@ export declare class DocumentsService {
     constructor(prisma: PrismaService);
     uploadDocument(leadId: string, name: string, type: string, fileUrl: string): Promise<{
         id: string;
+        createdAt: Date;
         name: string;
+        status: string;
+        leadId: string;
+        updatedAt: Date;
         type: string;
         fileUrl: string;
-        status: string;
         note: string | null;
-        createdAt: Date;
-        updatedAt: Date;
-        leadId: string;
     }>;
     getDocumentsForUser(phone: string): Promise<{
         leadId: any;

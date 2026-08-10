@@ -276,14 +276,17 @@ export function StickyUrbanNav({ lightSentinelRef, partnerHref = "/contact" }: S
     >
       <div className="relative">
       <motion.header
-        className={`relative overflow-hidden border-b text-[#0A1128] backdrop-blur-xl transition-[background-color,box-shadow,border-color] duration-300 ${
+        className={`relative overflow-hidden border-b-0 text-[#0A1128] backdrop-blur-xl transition-[background-color,box-shadow,border-color] duration-300 ${
           barElevated
-            ? "border-[#0A1128]/15 bg-[#FAF6EE]/95 shadow-[0_12px_40px_-14px_rgba(0,0,0,0.55)]"
-            : "border-[#0A1128]/15 bg-[#FAF6EE]/80 shadow-[0_8px_32px_-18px_rgba(0,0,0,0.35)]"
+            ? "bg-[#FAF6EE]/95 shadow-[0_12px_40px_-14px_rgba(0,0,0,0.55)]"
+            : "bg-[#FAF6EE]/80 shadow-[0_8px_32px_-18px_rgba(0,0,0,0.35)]"
         }`}
         initial={false}
       >
-        <div className="pointer-events-none absolute inset-0 bg-[linear-gradient(90deg,rgba(212,175,55,0.04)_0%,transparent_22%,transparent_78%,rgba(153,27,51,0.04)_100%)] opacity-90" aria-hidden />
+        {/* Independence Day Theme - Prominent Bottom Border & Soft Wash */}
+        <div className="pointer-events-none absolute inset-0 bg-[linear-gradient(90deg,rgba(255,153,51,0.08)_0%,rgba(255,255,255,0.2)_50%,rgba(19,136,8,0.08)_100%)] opacity-100" aria-hidden />
+        <div className="pointer-events-none absolute inset-x-0 bottom-0 h-[4px] bg-gradient-to-r from-[#FF9933] via-[#FFFFFF] to-[#138808] opacity-100 shadow-[0_-2px_15px_rgba(255,153,51,0.2)]" aria-hidden />
+        
         <div className="relative mx-auto flex h-[72px] max-w-[1440px] items-center justify-between gap-3 px-5 md:gap-4 md:px-6">
           <KlfproLogo showConsulting size="compact" wordmarkClassName="text-[#0A1128]" />
 

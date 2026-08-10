@@ -12,19 +12,19 @@ export declare class AdminController {
             title: string;
         };
     } & {
-        status: string;
         id: string;
-        fullName: string;
-        phone: string;
         email: string;
-        loanTypeId: string;
-        assignedToId: string | null;
+        fullName: string;
+        createdAt: Date;
+        phone: string;
         message: string | null;
-        loanAmount: import("@prisma/client/runtime/library").Decimal | null;
         monthlyIncome: import("@prisma/client/runtime/library").Decimal | null;
         employmentType: string | null;
         existingEmi: import("@prisma/client/runtime/library").Decimal | null;
-        createdAt: Date;
+        loanAmount: import("@prisma/client/runtime/library").Decimal | null;
+        loanTypeId: string;
+        assignedToId: string | null;
+        status: string;
     })[]>;
     getAnalytics(): Promise<{
         byStatus: {
@@ -37,19 +37,19 @@ export declare class AdminController {
         }[];
     }>;
     updateLeadStatus(id: string, status: string): Promise<{
-        status: string;
         id: string;
-        fullName: string;
-        phone: string;
         email: string;
-        loanTypeId: string;
-        assignedToId: string | null;
+        fullName: string;
+        createdAt: Date;
+        phone: string;
         message: string | null;
-        loanAmount: import("@prisma/client/runtime/library").Decimal | null;
         monthlyIncome: import("@prisma/client/runtime/library").Decimal | null;
         employmentType: string | null;
         existingEmi: import("@prisma/client/runtime/library").Decimal | null;
-        createdAt: Date;
+        loanAmount: import("@prisma/client/runtime/library").Decimal | null;
+        loanTypeId: string;
+        assignedToId: string | null;
+        status: string;
     }>;
     getSeoHealth(): Promise<{
         failures: {

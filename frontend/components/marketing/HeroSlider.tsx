@@ -39,7 +39,7 @@ export function HeroSlider() {
       onMouseEnter={() => setPaused(true)}
       onMouseLeave={() => setPaused(false)}
     >
-      <div className="absolute inset-0 bg-[#FAF6EE]">
+      <div className="absolute inset-0 bg-[#FAF6EE] pt-[72px]">
         <AnimatePresence initial={false} mode="wait">
           <motion.div
             key={current}
@@ -47,7 +47,7 @@ export function HeroSlider() {
             animate={{ opacity: 1, scale: 1 }}
             exit={{ opacity: 0 }}
             transition={{ duration: 1.2 }}
-            className="absolute inset-0"
+            className="absolute inset-0 top-[72px]"
           >
             <Image
               src={current}
@@ -69,6 +69,40 @@ export function HeroSlider() {
 
       <div className="pointer-events-none absolute inset-0 bg-[radial-gradient(circle_at_20%_30%,rgba(212,175,55,0.15),transparent_38%),radial-gradient(circle_at_80%_68%,rgba(30,64,175,0.15),transparent_42%)] opacity-60" />
       <div className="pointer-events-none absolute inset-0 bg-[radial-gradient(circle,rgba(255,255,255,0.3)_0.5px,transparent_1px)] [background-size:3px_3px] mix-blend-screen opacity-10" />
+
+      {/* Patriotic Independence Day Waving Flag */}
+      <div className="pointer-events-none absolute bottom-0 left-0 right-0 z-10 h-[100px] sm:h-[140px] w-full overflow-hidden leading-none opacity-95">
+        {/* Saffron Wave */}
+        <motion.div
+          className="absolute inset-0 top-[0px]"
+          style={{
+            backgroundImage: `url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1000 100' preserveAspectRatio='none'%3E%3Cpath d='M0,50 C250,100 750,0 1000,50 L1000,100 L0,100 Z' fill='%23FF9933'/%3E%3C/svg%3E")`,
+            backgroundSize: "1000px 100%"
+          }}
+          animate={{ backgroundPositionX: ["0px", "-1000px"] }}
+          transition={{ repeat: Infinity, ease: "linear", duration: 12 }}
+        />
+        {/* White Wave */}
+        <motion.div
+          className="absolute inset-0 top-[20px] sm:top-[30px]"
+          style={{
+            backgroundImage: `url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1000 100' preserveAspectRatio='none'%3E%3Cpath d='M0,50 C250,100 750,0 1000,50 L1000,100 L0,100 Z' fill='%23FFFFFF'/%3E%3C/svg%3E")`,
+            backgroundSize: "1000px 100%"
+          }}
+          animate={{ backgroundPositionX: ["0px", "-1000px"] }}
+          transition={{ repeat: Infinity, ease: "linear", duration: 15 }}
+        />
+        {/* Green Wave */}
+        <motion.div
+          className="absolute inset-0 top-[40px] sm:top-[60px]"
+          style={{
+            backgroundImage: `url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1000 100' preserveAspectRatio='none'%3E%3Cpath d='M0,50 C250,100 750,0 1000,50 L1000,100 L0,100 Z' fill='%23138808'/%3E%3C/svg%3E")`,
+            backgroundSize: "1000px 100%"
+          }}
+          animate={{ backgroundPositionX: ["0px", "-1000px"] }}
+          transition={{ repeat: Infinity, ease: "linear", duration: 18 }}
+        />
+      </div>
 
       <div className="relative mx-auto flex h-full max-w-[1240px] items-center justify-center px-4 pb-20 pt-24 text-center md:px-6">
         <motion.div initial={{ opacity: 0, y: 26 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.7 }} className="mx-auto max-w-3xl">

@@ -25,9 +25,9 @@ export declare class LeadsService {
         employmentType: string | null;
         existingEmi: import("@prisma/client/runtime/library").Decimal | null;
         loanAmount: import("@prisma/client/runtime/library").Decimal | null;
+        loanTypeId: string;
         assignedToId: string | null;
         status: string;
-        loanTypeId: string;
     })[]>;
     findByPhone(phone: string): Promise<({
         loanType: {
@@ -38,10 +38,10 @@ export declare class LeadsService {
             description: string | null;
         };
         timeline: {
-            leadId: string;
             id: string;
             createdAt: Date;
             description: string | null;
+            leadId: string;
             stage: string;
         }[];
     } & {
@@ -55,9 +55,9 @@ export declare class LeadsService {
         employmentType: string | null;
         existingEmi: import("@prisma/client/runtime/library").Decimal | null;
         loanAmount: import("@prisma/client/runtime/library").Decimal | null;
+        loanTypeId: string;
         assignedToId: string | null;
         status: string;
-        loanTypeId: string;
     })[]>;
     getAllSeoPages(): Promise<{
         slug: string;

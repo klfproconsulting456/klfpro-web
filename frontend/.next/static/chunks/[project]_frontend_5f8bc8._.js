@@ -67,7 +67,7 @@ const companyLinks = [
     },
     {
         name: "FAQs",
-        href: "/faqs"
+        href: "/#faq"
     }
 ];
 function MarketingFooterSection() {
@@ -978,15 +978,23 @@ function StickyUrbanNav({ lightSentinelRef, partnerHref = "/contact" }) {
             className: "relative",
             children: [
                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["motion"].header, {
-                    className: `relative overflow-hidden border-b text-[#0A1128] backdrop-blur-xl transition-[background-color,box-shadow,border-color] duration-300 ${barElevated ? "border-[#0A1128]/15 bg-[#FAF6EE]/95 shadow-[0_12px_40px_-14px_rgba(0,0,0,0.55)]" : "border-[#0A1128]/15 bg-[#FAF6EE]/80 shadow-[0_8px_32px_-18px_rgba(0,0,0,0.35)]"}`,
+                    className: `relative overflow-hidden border-b-0 text-[#0A1128] backdrop-blur-xl transition-[background-color,box-shadow,border-color] duration-300 ${barElevated ? "bg-[#FAF6EE]/95 shadow-[0_12px_40px_-14px_rgba(0,0,0,0.55)]" : "bg-[#FAF6EE]/80 shadow-[0_8px_32px_-18px_rgba(0,0,0,0.35)]"}`,
                     initial: false,
                     children: [
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                            className: "pointer-events-none absolute inset-0 bg-[linear-gradient(90deg,rgba(212,175,55,0.04)_0%,transparent_22%,transparent_78%,rgba(153,27,51,0.04)_100%)] opacity-90",
+                            className: "pointer-events-none absolute inset-0 bg-[linear-gradient(90deg,rgba(255,153,51,0.08)_0%,rgba(255,255,255,0.2)_50%,rgba(19,136,8,0.08)_100%)] opacity-100",
                             "aria-hidden": true
                         }, void 0, false, {
                             fileName: "[project]/frontend/components/marketing/StickyUrbanNav.tsx",
-                            lineNumber: 286,
+                            lineNumber: 287,
+                            columnNumber: 9
+                        }, this),
+                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                            className: "pointer-events-none absolute inset-x-0 bottom-0 h-[4px] bg-gradient-to-r from-[#FF9933] via-[#FFFFFF] to-[#138808] opacity-100 shadow-[0_-2px_15px_rgba(255,153,51,0.2)]",
+                            "aria-hidden": true
+                        }, void 0, false, {
+                            fileName: "[project]/frontend/components/marketing/StickyUrbanNav.tsx",
+                            lineNumber: 288,
                             columnNumber: 9
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -998,7 +1006,7 @@ function StickyUrbanNav({ lightSentinelRef, partnerHref = "/contact" }) {
                                     wordmarkClassName: "text-[#0A1128]"
                                 }, void 0, false, {
                                     fileName: "[project]/frontend/components/marketing/StickyUrbanNav.tsx",
-                                    lineNumber: 288,
+                                    lineNumber: 291,
                                     columnNumber: 11
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("nav", {
@@ -1029,13 +1037,13 @@ function StickyUrbanNav({ lightSentinelRef, partnerHref = "/contact" }) {
                                                                 "aria-hidden": true
                                                             }, void 0, false, {
                                                                 fileName: "[project]/frontend/components/marketing/StickyUrbanNav.tsx",
-                                                                lineNumber: 315,
+                                                                lineNumber: 318,
                                                                 columnNumber: 21
                                                             }, this)
                                                         ]
                                                     }, void 0, true, {
                                                         fileName: "[project]/frontend/components/marketing/StickyUrbanNav.tsx",
-                                                        lineNumber: 313,
+                                                        lineNumber: 316,
                                                         columnNumber: 19
                                                     }, this),
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["motion"].span, {
@@ -1050,13 +1058,13 @@ function StickyUrbanNav({ lightSentinelRef, partnerHref = "/contact" }) {
                                                         children: "▾"
                                                     }, void 0, false, {
                                                         fileName: "[project]/frontend/components/marketing/StickyUrbanNav.tsx",
-                                                        lineNumber: 322,
+                                                        lineNumber: 325,
                                                         columnNumber: 19
                                                     }, this)
                                                 ]
                                             }, item.key, true, {
                                                 fileName: "[project]/frontend/components/marketing/StickyUrbanNav.tsx",
-                                                lineNumber: 294,
+                                                lineNumber: 297,
                                                 columnNumber: 17
                                             }, this);
                                         }),
@@ -1070,23 +1078,23 @@ function StickyUrbanNav({ lightSentinelRef, partnerHref = "/contact" }) {
                                                     children: "KLFPRO Healthcare"
                                                 }, void 0, false, {
                                                     fileName: "[project]/frontend/components/marketing/StickyUrbanNav.tsx",
-                                                    lineNumber: 338,
+                                                    lineNumber: 341,
                                                     columnNumber: 17
                                                 }, this)
                                             }, void 0, false, {
                                                 fileName: "[project]/frontend/components/marketing/StickyUrbanNav.tsx",
-                                                lineNumber: 334,
+                                                lineNumber: 337,
                                                 columnNumber: 15
                                             }, this)
                                         }, void 0, false, {
                                             fileName: "[project]/frontend/components/marketing/StickyUrbanNav.tsx",
-                                            lineNumber: 333,
+                                            lineNumber: 336,
                                             columnNumber: 13
                                         }, this)
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/frontend/components/marketing/StickyUrbanNav.tsx",
-                                    lineNumber: 290,
+                                    lineNumber: 293,
                                     columnNumber: 11
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1101,7 +1109,7 @@ function StickyUrbanNav({ lightSentinelRef, partnerHref = "/contact" }) {
                                             children: mobileOpen ? "Close" : "Menu"
                                         }, void 0, false, {
                                             fileName: "[project]/frontend/components/marketing/StickyUrbanNav.tsx",
-                                            lineNumber: 346,
+                                            lineNumber: 349,
                                             columnNumber: 13
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$link$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
@@ -1110,19 +1118,19 @@ function StickyUrbanNav({ lightSentinelRef, partnerHref = "/contact" }) {
                                             children: "Login"
                                         }, void 0, false, {
                                             fileName: "[project]/frontend/components/marketing/StickyUrbanNav.tsx",
-                                            lineNumber: 355,
+                                            lineNumber: 358,
                                             columnNumber: 13
                                         }, this)
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/frontend/components/marketing/StickyUrbanNav.tsx",
-                                    lineNumber: 345,
+                                    lineNumber: 348,
                                     columnNumber: 11
                                 }, this)
                             ]
                         }, void 0, true, {
                             fileName: "[project]/frontend/components/marketing/StickyUrbanNav.tsx",
-                            lineNumber: 287,
+                            lineNumber: 290,
                             columnNumber: 9
                         }, this)
                     ]
@@ -1170,7 +1178,7 @@ function StickyUrbanNav({ lightSentinelRef, partnerHref = "/contact" }) {
                                                 children: cfg.eyebrow
                                             }, void 0, false, {
                                                 fileName: "[project]/frontend/components/marketing/StickyUrbanNav.tsx",
-                                                lineNumber: 380,
+                                                lineNumber: 383,
                                                 columnNumber: 21
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -1178,7 +1186,7 @@ function StickyUrbanNav({ lightSentinelRef, partnerHref = "/contact" }) {
                                                 children: cfg.title
                                             }, void 0, false, {
                                                 fileName: "[project]/frontend/components/marketing/StickyUrbanNav.tsx",
-                                                lineNumber: 381,
+                                                lineNumber: 384,
                                                 columnNumber: 21
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1190,7 +1198,7 @@ function StickyUrbanNav({ lightSentinelRef, partnerHref = "/contact" }) {
                                                                 children: col.title
                                                             }, void 0, false, {
                                                                 fileName: "[project]/frontend/components/marketing/StickyUrbanNav.tsx",
-                                                                lineNumber: 385,
+                                                                lineNumber: 388,
                                                                 columnNumber: 27
                                                             }, this),
                                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("ul", {
@@ -1205,42 +1213,42 @@ function StickyUrbanNav({ lightSentinelRef, partnerHref = "/contact" }) {
                                                                             children: label
                                                                         }, void 0, false, {
                                                                             fileName: "[project]/frontend/components/marketing/StickyUrbanNav.tsx",
-                                                                            lineNumber: 392,
+                                                                            lineNumber: 395,
                                                                             columnNumber: 37
                                                                         }, this) : /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
                                                                             className: "block rounded-lg px-2 py-2 text-[13px] text-[#1E293B]",
                                                                             children: label
                                                                         }, void 0, false, {
                                                                             fileName: "[project]/frontend/components/marketing/StickyUrbanNav.tsx",
-                                                                            lineNumber: 400,
+                                                                            lineNumber: 403,
                                                                             columnNumber: 37
                                                                         }, this)
                                                                     }, label, false, {
                                                                         fileName: "[project]/frontend/components/marketing/StickyUrbanNav.tsx",
-                                                                        lineNumber: 390,
+                                                                        lineNumber: 393,
                                                                         columnNumber: 33
                                                                     }, this);
                                                                 })
                                                             }, void 0, false, {
                                                                 fileName: "[project]/frontend/components/marketing/StickyUrbanNav.tsx",
-                                                                lineNumber: 386,
+                                                                lineNumber: 389,
                                                                 columnNumber: 27
                                                             }, this)
                                                         ]
                                                     }, col.title, true, {
                                                         fileName: "[project]/frontend/components/marketing/StickyUrbanNav.tsx",
-                                                        lineNumber: 384,
+                                                        lineNumber: 387,
                                                         columnNumber: 25
                                                     }, this))
                                             }, void 0, false, {
                                                 fileName: "[project]/frontend/components/marketing/StickyUrbanNav.tsx",
-                                                lineNumber: 382,
+                                                lineNumber: 385,
                                                 columnNumber: 21
                                             }, this)
                                         ]
                                     }, nav.key, true, {
                                         fileName: "[project]/frontend/components/marketing/StickyUrbanNav.tsx",
-                                        lineNumber: 379,
+                                        lineNumber: 382,
                                         columnNumber: 19
                                     }, this);
                                 }),
@@ -1254,7 +1262,7 @@ function StickyUrbanNav({ lightSentinelRef, partnerHref = "/contact" }) {
                                             children: "KLFPRO Healthcare"
                                         }, void 0, false, {
                                             fileName: "[project]/frontend/components/marketing/StickyUrbanNav.tsx",
-                                            lineNumber: 413,
+                                            lineNumber: 416,
                                             columnNumber: 17
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$link$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
@@ -1264,29 +1272,29 @@ function StickyUrbanNav({ lightSentinelRef, partnerHref = "/contact" }) {
                                             children: "Login"
                                         }, void 0, false, {
                                             fileName: "[project]/frontend/components/marketing/StickyUrbanNav.tsx",
-                                            lineNumber: 420,
+                                            lineNumber: 423,
                                             columnNumber: 17
                                         }, this)
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/frontend/components/marketing/StickyUrbanNav.tsx",
-                                    lineNumber: 412,
+                                    lineNumber: 415,
                                     columnNumber: 15
                                 }, this)
                             ]
                         }, void 0, true, {
                             fileName: "[project]/frontend/components/marketing/StickyUrbanNav.tsx",
-                            lineNumber: 375,
+                            lineNumber: 378,
                             columnNumber: 13
                         }, this)
                     }, void 0, false, {
                         fileName: "[project]/frontend/components/marketing/StickyUrbanNav.tsx",
-                        lineNumber: 367,
+                        lineNumber: 370,
                         columnNumber: 11
                     }, this) : null
                 }, void 0, false, {
                     fileName: "[project]/frontend/components/marketing/StickyUrbanNav.tsx",
-                    lineNumber: 365,
+                    lineNumber: 368,
                     columnNumber: 7
                 }, this),
                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$components$2f$AnimatePresence$2f$index$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["AnimatePresence"], {
@@ -1324,7 +1332,7 @@ function StickyUrbanNav({ lightSentinelRef, partnerHref = "/contact" }) {
                                 "aria-hidden": true
                             }, void 0, false, {
                                 fileName: "[project]/frontend/components/marketing/StickyUrbanNav.tsx",
-                                lineNumber: 444,
+                                lineNumber: 447,
                                 columnNumber: 13
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1332,7 +1340,7 @@ function StickyUrbanNav({ lightSentinelRef, partnerHref = "/contact" }) {
                                 "aria-hidden": true
                             }, void 0, false, {
                                 fileName: "[project]/frontend/components/marketing/StickyUrbanNav.tsx",
-                                lineNumber: 445,
+                                lineNumber: 448,
                                 columnNumber: 13
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1348,7 +1356,7 @@ function StickyUrbanNav({ lightSentinelRef, partnerHref = "/contact" }) {
                                                         children: activeConfig.eyebrow
                                                     }, void 0, false, {
                                                         fileName: "[project]/frontend/components/marketing/StickyUrbanNav.tsx",
-                                                        lineNumber: 453,
+                                                        lineNumber: 456,
                                                         columnNumber: 19
                                                     }, this),
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h3", {
@@ -1356,7 +1364,7 @@ function StickyUrbanNav({ lightSentinelRef, partnerHref = "/contact" }) {
                                                         children: activeConfig.title
                                                     }, void 0, false, {
                                                         fileName: "[project]/frontend/components/marketing/StickyUrbanNav.tsx",
-                                                        lineNumber: 456,
+                                                        lineNumber: 459,
                                                         columnNumber: 19
                                                     }, this),
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -1364,13 +1372,13 @@ function StickyUrbanNav({ lightSentinelRef, partnerHref = "/contact" }) {
                                                         children: activeConfig.description
                                                     }, void 0, false, {
                                                         fileName: "[project]/frontend/components/marketing/StickyUrbanNav.tsx",
-                                                        lineNumber: 457,
+                                                        lineNumber: 460,
                                                         columnNumber: 19
                                                     }, this)
                                                 ]
                                             }, void 0, true, {
                                                 fileName: "[project]/frontend/components/marketing/StickyUrbanNav.tsx",
-                                                lineNumber: 452,
+                                                lineNumber: 455,
                                                 columnNumber: 17
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$link$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
@@ -1383,7 +1391,7 @@ function StickyUrbanNav({ lightSentinelRef, partnerHref = "/contact" }) {
                                                         children: "✦"
                                                     }, void 0, false, {
                                                         fileName: "[project]/frontend/components/marketing/StickyUrbanNav.tsx",
-                                                        lineNumber: 464,
+                                                        lineNumber: 467,
                                                         columnNumber: 19
                                                     }, this),
                                                     " Quick view",
@@ -1392,19 +1400,19 @@ function StickyUrbanNav({ lightSentinelRef, partnerHref = "/contact" }) {
                                                         children: "→"
                                                     }, void 0, false, {
                                                         fileName: "[project]/frontend/components/marketing/StickyUrbanNav.tsx",
-                                                        lineNumber: 465,
+                                                        lineNumber: 468,
                                                         columnNumber: 19
                                                     }, this)
                                                 ]
                                             }, void 0, true, {
                                                 fileName: "[project]/frontend/components/marketing/StickyUrbanNav.tsx",
-                                                lineNumber: 459,
+                                                lineNumber: 462,
                                                 columnNumber: 17
                                             }, this)
                                         ]
                                     }, void 0, true, {
                                         fileName: "[project]/frontend/components/marketing/StickyUrbanNav.tsx",
-                                        lineNumber: 451,
+                                        lineNumber: 454,
                                         columnNumber: 15
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1439,14 +1447,14 @@ function StickyUrbanNav({ lightSentinelRef, partnerHref = "/contact" }) {
                                                                 "aria-hidden": true
                                                             }, void 0, false, {
                                                                 fileName: "[project]/frontend/components/marketing/StickyUrbanNav.tsx",
-                                                                lineNumber: 488,
+                                                                lineNumber: 491,
                                                                 columnNumber: 23
                                                             }, this),
                                                             col.title
                                                         ]
                                                     }, void 0, true, {
                                                         fileName: "[project]/frontend/components/marketing/StickyUrbanNav.tsx",
-                                                        lineNumber: 487,
+                                                        lineNumber: 490,
                                                         columnNumber: 21
                                                     }, this),
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("ul", {
@@ -1469,40 +1477,40 @@ function StickyUrbanNav({ lightSentinelRef, partnerHref = "/contact" }) {
                                                                 children: renderLink(item)
                                                             }, item, false, {
                                                                 fileName: "[project]/frontend/components/marketing/StickyUrbanNav.tsx",
-                                                                lineNumber: 493,
+                                                                lineNumber: 496,
                                                                 columnNumber: 25
                                                             }, this))
                                                     }, void 0, false, {
                                                         fileName: "[project]/frontend/components/marketing/StickyUrbanNav.tsx",
-                                                        lineNumber: 491,
+                                                        lineNumber: 494,
                                                         columnNumber: 21
                                                     }, this)
                                                 ]
                                             }, col.title, true, {
                                                 fileName: "[project]/frontend/components/marketing/StickyUrbanNav.tsx",
-                                                lineNumber: 479,
+                                                lineNumber: 482,
                                                 columnNumber: 19
                                             }, this))
                                     }, void 0, false, {
                                         fileName: "[project]/frontend/components/marketing/StickyUrbanNav.tsx",
-                                        lineNumber: 469,
+                                        lineNumber: 472,
                                         columnNumber: 15
                                     }, this)
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/frontend/components/marketing/StickyUrbanNav.tsx",
-                                lineNumber: 450,
+                                lineNumber: 453,
                                 columnNumber: 13
                             }, this)
                         ]
                     }, activeMenu, true, {
                         fileName: "[project]/frontend/components/marketing/StickyUrbanNav.tsx",
-                        lineNumber: 435,
+                        lineNumber: 438,
                         columnNumber: 11
                     }, this) : null
                 }, void 0, false, {
                     fileName: "[project]/frontend/components/marketing/StickyUrbanNav.tsx",
-                    lineNumber: 433,
+                    lineNumber: 436,
                     columnNumber: 7
                 }, this)
             ]

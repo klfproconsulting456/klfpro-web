@@ -13,7 +13,6 @@ export const metadata: Metadata = {
   title: "KLFPRO Consulting — Personal Loan, Home Loan & Business Loan in Gurgaon | Apply Online",
   description:
     "KLFPRO Consulting is Gurgaon's trusted loan agency. Apply for Personal Loan, Home Loan, Business Loan, Loan Against Property, MSME Loan & more. Fast approval, lowest interest rates, expert financial consultants in Gurugram.",
-  alternates: { canonical: "https://klfpro.in" },
   openGraph: {
     title: "KLFPRO Consulting — Personal Loan, Home Loan & Business Loan in Gurgaon",
     description: "Gurgaon's trusted loan agency. Apply for Personal, Home, Business Loans & more. Fast approval, lowest rates.",

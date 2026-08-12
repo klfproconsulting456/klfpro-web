@@ -32,7 +32,7 @@ export function MarketingFooterSection() {
       transition={{ duration: 0.55, ease: [0.22, 1, 0.36, 1] }}
       className="border-t border-white/10 bg-[#081428] text-white shadow-[0_-24px_80px_-40px_rgba(0,0,0,0.5)]"
     >
-      <div className="mx-auto grid grid-cols-1 max-w-[1170px] gap-10 px-5 py-10 md:grid-cols-[1.8fr_1fr_1fr] md:px-6">
+      <div className="mx-auto grid grid-cols-1 max-w-[1200px] gap-8 px-5 py-10 md:grid-cols-[1.5fr_1fr_1fr_1fr] md:px-6">
         <div>
           <div className="flex items-center gap-3 group">
             <img src="/healthcare-logo.png" alt="KLFPRO mark" className="h-[40px] w-auto object-contain transition-transform duration-300 group-hover:scale-105" />
@@ -135,6 +135,18 @@ export function MarketingFooterSection() {
                 </Link>
               </li>
             ))}
+          </ul>
+        </div>
+
+        <div>
+          <h4 className="text-[16px] font-semibold leading-none tracking-wide text-white/50">TOP LOCATIONS</h4>
+          <ul className="mt-4 space-y-3 text-[13px] text-white/80">
+            <li><Link href="/personal-loan-in-gurgaon" className="transition hover:text-[#D4AF37]">Personal Loan in Gurgaon</Link></li>
+            <li><Link href="/home-loan-in-delhi" className="transition hover:text-[#D4AF37]">Home Loan in Delhi</Link></li>
+            <li><Link href="/business-loan-in-noida" className="transition hover:text-[#D4AF37]">Business Loan in Noida</Link></li>
+            <li><Link href="/loan-against-property-in-faridabad" className="transition hover:text-[#D4AF37]">LAP in Faridabad</Link></li>
+            <li><Link href="/car-loan-in-ghaziabad" className="transition hover:text-[#D4AF37]">Car Loan in Ghaziabad</Link></li>
+            <li><Link href="/msme-loan-in-gurgaon" className="transition hover:text-[#D4AF37]">MSME Loan in Gurgaon</Link></li>
           </ul>
         </div>
       </div>

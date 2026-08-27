@@ -283,10 +283,6 @@ export function StickyUrbanNav({ lightSentinelRef, partnerHref = "/contact" }: S
         }`}
         initial={false}
       >
-        {/* Independence Day Theme - Prominent Bottom Border & Soft Wash */}
-        <div className="pointer-events-none absolute inset-0 bg-[linear-gradient(90deg,rgba(255,153,51,0.08)_0%,rgba(255,255,255,0.2)_50%,rgba(19,136,8,0.08)_100%)] opacity-100" aria-hidden />
-        <div className="pointer-events-none absolute inset-x-0 bottom-0 h-[4px] bg-gradient-to-r from-[#FF9933] via-[#FFFFFF] to-[#138808] opacity-100 shadow-[0_-2px_15px_rgba(255,153,51,0.2)]" aria-hidden />
-        
         <div className="relative mx-auto flex h-[72px] max-w-[1440px] items-center justify-between gap-3 px-5 md:gap-4 md:px-6">
           <KlfproLogo showConsulting size="compact" wordmarkClassName="text-[#0A1128]" />
 

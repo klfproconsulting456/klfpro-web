@@ -47,6 +47,35 @@ const nextConfig = {
         headers: securityHeaders
       }
     ];
+  },
+  async redirects() {
+    return [
+      {
+        source: '/index.html',
+        destination: '/',
+        permanent: true, // 301 Redirect
+      },
+      {
+        source: '/pages/about.html',
+        destination: '/about-us',
+        permanent: true,
+      },
+      {
+        source: '/pages/terms.html',
+        destination: '/legal/terms',
+        permanent: true,
+      },
+      {
+        source: '/pages/apply.html',
+        destination: '/eligibility',
+        permanent: true,
+      },
+      {
+        source: '/pages/services.html',
+        destination: '/',
+        permanent: true,
+      }
+    ];
   }
 };
 

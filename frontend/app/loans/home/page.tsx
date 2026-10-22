@@ -6,6 +6,7 @@ import { generateFinancialProductSchema } from "@/lib/seo";
 import { ChatFab } from "@/components/marketing/ChatFab";
 import { HeroSection } from "@/components/marketing/HeroSection";
 import { WhyChooseUsSection } from "@/components/marketing/WhyChooseUsSection";
+import { HomeLoanListingSection } from "@/components/klfpro/HomeLoanListingSection";
 import { GenericProductFeatures } from "@/components/marketing/GenericProductFeatures";
 import { MarketingFooterSection } from "@/components/marketing/MarketingFooterSection";
 import { EmiCalculator } from "@/components/emi/EmiCalculator";
@@ -15,7 +16,7 @@ import type { EmiScheduleInputs } from "@/components/emi/EmiPaymentScheduleSecti
 const homeLoanFeatures = [
   {
     title: "Lowest Interest Rates",
-    description: "Benefit from industry-leading low interest rates starting from 8.5% p.a., designed to keep your EMI burden minimal over long tenures.",
+    description: "Benefit from industry-leading low interest rates starting from 7.25% p.a., designed to keep your EMI burden minimal over long tenures.",
     iconSvg: (
       <svg className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6" />
@@ -70,10 +71,10 @@ const homeLoanFeatures = [
 ];
 
 export default function HomeLoanPage() {
-  // Home loan specific defaults (e.g. 50 Lakhs, 8.5%, 20 years)
+  // Home loan specific defaults (e.g. 50 Lakhs, 7.25%, 20 years)
   const [emiInputs, setEmiInputs] = useState<EmiScheduleInputs>({
     loanAmount: 5000000,
-    annualRatePct: 8.5,
+    annualRatePct: 7.25,
     tenureMonths: 240
   });
   const [autoOpenSignal, setAutoOpenSignal] = useState(0);
@@ -86,8 +87,8 @@ export default function HomeLoanPage() {
           __html: JSON.stringify(
             generateFinancialProductSchema({
               name: "Home Loan",
-              description: "Home Loan up to ₹5 Crore in Gurgaon. Rates from 7.3% p.a. Compare 30+ bank offers.",
-              interestRate: "7.3",
+              description: "Home Loan up to ₹5 Crore in Gurgaon. Rates from 7.25% p.a. Compare 30+ bank offers.",
+              interestRate: "7.25",
               url: "/loans/home",
             })
           ),
@@ -102,6 +103,8 @@ export default function HomeLoanPage() {
         features={homeLoanFeatures}
         theme="blue"
       />
+
+      <HomeLoanListingSection />
 
       <section className="border-t border-[#0A1128]/15 bg-[#FAF6EE] pb-6">
         <EmiCalculator

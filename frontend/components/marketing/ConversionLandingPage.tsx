@@ -20,8 +20,8 @@ import { ChatFab } from "./ChatFab";
 const productCards = [
   {
     title: "Home Loan",
-    description: "Instant approval at competitive rates starting at 7.3% p.a.",
-    badge: "7.3% p.a.",
+    description: "Instant approval at competitive rates starting at 7.25% p.a.",
+    badge: "7.25% p.a.",
     image: "/assets/products/home-loan.png"
   },
   {

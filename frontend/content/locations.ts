@@ -9,7 +9,7 @@ export const targetCities = [
 export const targetLoans = [
   { id: "personal-loan", name: "Personal Loan", baseRate: "10.25", maxAmount: "₹40 Lakhs", type: "Unsecured", idealFor: "Medical emergencies, weddings, debt consolidation" },
   { id: "business-loan", name: "Business Loan", baseRate: "14.50", maxAmount: "₹50 Lakhs", type: "Unsecured", idealFor: "Working capital, expansion, equipment purchase" },
-  { id: "home-loan", name: "Home Loan", baseRate: "8.50", maxAmount: "₹5 Crores", type: "Secured", idealFor: "Buying a new house, construction, renovation" },
+  { id: "home-loan", name: "Home Loan", baseRate: "7.25", maxAmount: "₹5 Crores", type: "Secured", idealFor: "Buying a new house, construction, renovation" },
   { id: "loan-against-property", name: "Loan Against Property", baseRate: "9.50", maxAmount: "₹10 Crores", type: "Secured", idealFor: "Large business needs, education, debt restructuring" },
   { id: "msme-loan", name: "MSME Loan", baseRate: "12.50", maxAmount: "₹2 Crores", type: "Unsecured/Secured", idealFor: "Small business growth, machinery, MSME expansion" },
   { id: "commercial-vehicle-loan", name: "Commercial Vehicle Loan", baseRate: "10.00", maxAmount: "₹5 Crores", type: "Secured", idealFor: "Fleet expansion, logistics, transport business" },

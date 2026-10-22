@@ -19,20 +19,20 @@ type JourneySection = {
 };
 
 const orbitCards = [
-  { bank: "HDFC Bank", logo: "/images/marketing/banks/HDFC.png", variant: "from-[#FAF6EE] via-[#FDFBF7] to-[#FAF6EE]" },
-  { bank: "SBI Card", logo: "/images/marketing/banks/SBI.png", variant: "from-[#FAF6EE] via-[#2563eb] to-[#FAF6EE]" },
-  { bank: "ICICI Bank", logo: "/images/marketing/banks/ICICI.png", variant: "from-[#FAF6EE] via-[#b45309] to-[#FAF6EE]" },
-  { bank: "Axis Bank", logo: "/images/marketing/banks/Axis.png", variant: "from-[#FAF6EE] via-[#6d28d9] to-[#FAF6EE]" },
-  { bank: "PNB Card", logo: "/images/marketing/banks/PNB.png", variant: "from-[#FAF6EE] via-[#FDFBF7] to-[#FAF6EE]" },
-  { bank: "HDFC Bank", logo: "/images/marketing/banks/HDFC.png", variant: "from-[#FAF6EE] via-[#334155] to-[#FAF6EE]" },
-  { bank: "SBI Card", logo: "/images/marketing/banks/SBI.png", variant: "from-[#FAF6EE] via-[#FDFBF7] to-[#FAF6EE]" },
-  { bank: "ICICI Bank", logo: "/images/marketing/banks/ICICI.png", variant: "from-[#FAF6EE] via-[#7c2d12] to-[#FAF6EE]" },
-  { bank: "Axis Bank", logo: "/images/marketing/banks/Axis.png", variant: "from-[#FAF6EE] via-[#4338ca] to-[#FAF6EE]" },
-  { bank: "PNB Card", logo: "/images/marketing/banks/PNB.png", variant: "from-[#FAF6EE] via-[#FDFBF7] to-[#FAF6EE]" },
-  { bank: "HDFC Bank", logo: "/images/marketing/banks/HDFC.png", variant: "from-[#FAF6EE] via-[#FDFBF7] to-[#FAF6EE]" },
-  { bank: "SBI Card", logo: "/images/marketing/banks/SBI.png", variant: "from-[#FAF6EE] via-[#FDFBF7] to-[#FAF6EE]" },
-  { bank: "Axis Bank", logo: "/images/marketing/banks/Axis.png", variant: "from-[#FAF6EE] via-[#6d28d9] to-[#FAF6EE]" },
-  { bank: "ICICI Bank", logo: "/images/marketing/banks/ICICI.png", variant: "from-[#FAF6EE] via-[#7c2d12] to-[#FAF6EE]" }
+  { bank: "HDFC Bank", logo: "/images/partners/HDFC.png", variant: "from-[#FAF6EE] via-[#FDFBF7] to-[#FAF6EE]" },
+  { bank: "SBI Card", logo: "/images/partners/SBI.png", variant: "from-[#FAF6EE] via-[#2563eb] to-[#FAF6EE]" },
+  { bank: "ICICI Bank", logo: "/images/partners/ICICI.png", variant: "from-[#FAF6EE] via-[#b45309] to-[#FAF6EE]" },
+  { bank: "Axis Bank", logo: "/images/partners/Axis.png", variant: "from-[#FAF6EE] via-[#6d28d9] to-[#FAF6EE]" },
+  { bank: "PNB Card", logo: "/images/partners/PNB.png", variant: "from-[#FAF6EE] via-[#FDFBF7] to-[#FAF6EE]" },
+  { bank: "Kotak Mahindra", logo: "/images/partners/kotak.png", variant: "from-[#FAF6EE] via-[#334155] to-[#FAF6EE]" },
+  { bank: "SBI Card", logo: "/images/partners/SBI.png", variant: "from-[#FAF6EE] via-[#FDFBF7] to-[#FAF6EE]" },
+  { bank: "ICICI Bank", logo: "/images/partners/ICICI.png", variant: "from-[#FAF6EE] via-[#7c2d12] to-[#FAF6EE]" },
+  { bank: "Axis Bank", logo: "/images/partners/Axis.png", variant: "from-[#FAF6EE] via-[#4338ca] to-[#FAF6EE]" },
+  { bank: "PNB Card", logo: "/images/partners/PNB.png", variant: "from-[#FAF6EE] via-[#FDFBF7] to-[#FAF6EE]" },
+  { bank: "HDFC Bank", logo: "/images/partners/HDFC.png", variant: "from-[#FAF6EE] via-[#FDFBF7] to-[#FAF6EE]" },
+  { bank: "Bajaj Finserv", logo: "/images/partners/bajaj.png", variant: "from-[#FAF6EE] via-[#FDFBF7] to-[#FAF6EE]" },
+  { bank: "Axis Bank", logo: "/images/partners/Axis.png", variant: "from-[#FAF6EE] via-[#6d28d9] to-[#FAF6EE]" },
+  { bank: "Bank of Maharashtra", logo: "/images/partners/BOM.png", variant: "from-[#FAF6EE] via-[#7c2d12] to-[#FAF6EE]" }
 ] as const;
 
 const sections: JourneySection[] = [
@@ -360,7 +360,7 @@ function CreditCardOrbit() {
             />
             <div className="relative flex items-center justify-between">
               <div className="relative h-4 w-14 overflow-hidden">
-                <Image src={card.logo} alt={`${card.bank} logo`} fill className="scale-110 object-contain" sizes="56px" />
+                <Image src={card.logo} alt={`${card.bank} logo`} fill className="scale-110 object-contain" sizes="56px" unoptimized={true} />
               </div>
               <span className="text-[9px] uppercase tracking-[0.2em] text-[#0A1128]/75">Platinum</span>
             </div>
